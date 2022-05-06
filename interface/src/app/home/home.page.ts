@@ -8,7 +8,7 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 })
 export class HomePage {
   faCoffee = faCoffee;
-  
+
   constructor() {}
 
 }
