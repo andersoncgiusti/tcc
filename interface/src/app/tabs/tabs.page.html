@@ -14,17 +14,17 @@
       <ion-grid>
         <ion-row>
           <ion-col size="4">
-            <ion-icon class="info" name="calendar-number-outline"></ion-icon>
+            <ion-icon class="info" name="calendar-number-outline"></ion-icon><br>
             <ion-label class="info">Vizualiar agenda</ion-label>
           </ion-col>
 
           <ion-col size="4">
-            <ion-icon class="info"name="people-outline"></ion-icon><br>
+            <ion-icon class="info" name="calendar-clear-outline"></ion-icon><br>
             <ion-label class="info">Alterar agenda</ion-label>
           </ion-col>
 
           <ion-col size="4">
-            <ion-icon class="info"name="people-outline"></ion-icon>
+            <ion-icon class="info"name="people-outline"></ion-icon><br>
             <ion-label class="info">Gerenciar clientes</ion-label>
           </ion-col>
         </ion-row>
@@ -74,20 +74,25 @@
 
 <ion-tabs>
   <ion-tab-bar>
+    <ion-tab-button class="home" href="/tabs/()">
+      <ion-icon class="labelMenu" name="home-outline"></ion-icon>      
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+    
     <ion-tab-button class="agenda" href="/tabs/()">
       <ion-icon  class="labelMenu" name="calendar-outline"></ion-icon>
       <ion-label>Agenda</ion-label>
       <!-- <ion-badge>6</ion-badge> -->
     </ion-tab-button>
 
-    <ion-tab-button class="home" href="/tabs/()">
-      <ion-icon class="labelMenu" name="home-outline"></ion-icon>      
-      <ion-label>Home</ion-label>
-    </ion-tab-button>
-
     <ion-tab-button class="perfil" href="/tabs/()">
-      <ion-icon class="labelMenu" name="person-circle"></ion-icon>
-      <ion-label>Perfil</ion-label>
-    </ion-tab-button>    
+      <ion-icon class="labelMenu" name="people-outline"></ion-icon>
+      <ion-label>Perfis</ion-label>
+    </ion-tab-button> 
+
+    <ion-tab-button class="home" href="/tabs/()">
+      <ion-icon class="labelMenu" name="wallet-outline"></ion-icon>     
+      <ion-label>Pagamentos</ion-label>
+    </ion-tab-button>       
   </ion-tab-bar>
 </ion-tabs>

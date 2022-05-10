@@ -1,31 +1,40 @@
-#container {
-  text-align: center;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.agenda {
+  background-color: rgb(108, 169, 101);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.home {
+  background-color: rgb(108, 169, 101);
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.perfil {
+  background-color: rgb(108, 169, 101);
 }
 
-#container a {
-  text-decoration: none;
+ion-icon, ion-label {
+  color: antiquewhite;
 }
 
-.teste {
-  background-color: red;
+ion-icon {
+  font-size: 32px;
 }
+
+.labels {
+  margin-left: 50px;
+  font-size: 12px;
+}
+
+.label {
+  margin-left: 30px;
+  font-size: 12px;
+}
+
+.info {
+  color: black;
+}
+
+ion-tab-bar {
+  height: 13%;
+  border: none;
+}
+
