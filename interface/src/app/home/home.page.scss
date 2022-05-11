@@ -1,17 +1,32 @@
 
 .agenda {
   background-color: rgb(108, 169, 101);
+  border-top-left-radius: 20px;
+  border-left: none;
+  border-right: none;
 }
 
 .home {
-  background-color: rgb(108, 169, 101);
+  background-color: white;
+  // border-top: 3px solid whitesmoke;
+  color: rgb(108, 169, 101);
+  border-left: none;
+  border-right: none;
 }
 
 .perfil {
   background-color: rgb(108, 169, 101);
+  border-left: none;
+  border-right: none;
 }
 
-ion-icon, ion-label {
+.pagamento {
+  background-color: rgb(108, 169, 101);
+  border-left: none;
+  border-right: none;
+}
+
+.calendar, .people, .pay, .labelMenu {
   color: antiquewhite;
 }
 
@@ -20,8 +35,8 @@ ion-icon {
 }
 
 .labels {
-  margin-left: 50px;
-  font-size: 12px;
+    margin-left: 50px;
+    font-size: 12px;
 }
 
 .label {
@@ -38,3 +53,12 @@ ion-tab-bar {
   border: none;
 }
 
+ion-badge {
+  background-color: red;
+  size: 32px;
+}
+
+.header {
+  --background: rgb(108, 169, 101);
+  color: white;
+}

@@ -1,22 +1,33 @@
 
 .agenda {
-    background-color: rgb(108, 169, 101);
-    border-top: 3px solid whitesmoke;
+    background-color: white;
+    // border-top: 3px solid whitesmoke;
+    color: rgb(108, 169, 101);
+    border-left: none;
+    border-right: none;
 }
 
 .home {
     background-color: rgb(108, 169, 101);
+    border-top-right-radius: 20px;
+    border-left: none;
+    border-right: none;
 }
 
 .perfil {
     background-color: rgb(108, 169, 101);
+    border-top-left-radius: 20px;
+    border-left: none;
+    border-right: none;
 }
 
 .pagamento {
     background-color: rgb(108, 169, 101);
+    border-left: none;
+    border-right: none;
 }
 
-ion-icon, ion-label {
+.house, .people, .pay, .labelMenu {
     color: antiquewhite;
 }
 
@@ -56,4 +67,30 @@ ion-badge {
     background-color: red;
     size: 32px;
 }
+
+ion-tab-button {
+    border-right: 1px solid rgb(108, 169, 101);
+    border-left: 1px solid rgb(108, 169, 101);
+}
+
+.toolbar-container {
+    background-color: rgb(108, 169, 101);
+}
+
+.header {
+    --background: rgb(108, 169, 101);
+    color: white;
+}
+
+.subTitle, .pencil, .trash {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 12px !important;
+    font-weight: bold;
+}
+
+
 
