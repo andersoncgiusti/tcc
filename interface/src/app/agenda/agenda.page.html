@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Agenda</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style="overflow: auto">
+  <!-- <cdk-virtual-scroll-viewport>  -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Vizualizar Agendamentos</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content class="text-center">
+        <div class="text-center">
+          <ion-datetime locale="pt-BR"></ion-datetime>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-grid>
+        <ion-row class="text-center">
+          <ion-col>Pacientes</ion-col>
+          <ion-col>Qtd Sessões</ion-col>
+          <ion-col>Horário</ion-col>
+          <ion-col>Fisioterapeuta</ion-col>
+        </ion-row>
+        <div>
+          <ion-row class="text-center results">
+            <ion-col>Luiz Brabo</ion-col>
+            <ion-col>2</ion-col>
+            <ion-col>13:00</ion-col>
+            <ion-col>Carla</ion-col>
+          </ion-row>
+        </div>
+      </ion-grid>
+    </ion-card>
+  <!-- </cdk-virtual-scroll-viewport> -->
+</ion-content>
+
+<ion-tabs>
+  <ion-tab-bar>
+    <ion-tab-button class="home" href="/tabs/()">
+      <ion-icon class="labelMenu" name="home-outline"></ion-icon>      
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+    
+    <ion-tab-button class="agenda" href="/tabs/()">
+      <ion-icon  class="labelMenu" name="calendar-outline"></ion-icon>
+      <ion-label>Agenda</ion-label>
+      <ion-badge>6</ion-badge>
+    </ion-tab-button>
+
+    <ion-tab-button class="perfil" href="/tabs/()">
+      <ion-icon class="labelMenu" name="people-outline"></ion-icon>
+      <ion-label>Perfis</ion-label>
+    </ion-tab-button> 
+
+    <ion-tab-button class="pagamento" href="/tabs/()">
+      <ion-icon class="labelMenu" name="wallet-outline"></ion-icon>     
+      <ion-label>Pagamentos</ion-label>
+    </ion-tab-button>       
+  </ion-tab-bar>
+</ion-tabs>
+

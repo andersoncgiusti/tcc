@@ -1,11 +1,11 @@
 
 .agenda {
     background-color: rgb(108, 169, 101);
+    border-top: 3px solid whitesmoke;
 }
 
 .home {
     background-color: rgb(108, 169, 101);
-    border-top: 3px solid whitesmoke;
 }
 
 .perfil {
@@ -41,5 +41,19 @@ ion-icon {
 ion-tab-bar {
     height: 13%;
     border: none;
+}
+
+ion-grid {
+    color: black;
+}
+
+.results {
+    background-color: rgb(108, 169, 101);
+    border-radius: 5px;
+}
+
+ion-badge {
+    background-color: red;
+    size: 32px;
 }
 
