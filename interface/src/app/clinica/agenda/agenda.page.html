@@ -5,7 +5,6 @@
 </ion-header>
 
 <ion-content>
-  <!-- <cdk-virtual-scroll-viewport>  -->
     <ion-card>
       <ion-card-header>
         <ion-card-title>Vizualizar Agendamentos</ion-card-title>
@@ -24,7 +23,6 @@
           <ion-col size="4">Pacientes</ion-col>
           <ion-col size="2">Sessões</ion-col>
           <ion-col size="2">Horário</ion-col>
-          <!-- <ion-col>Fisioterapeuta</ion-col> -->
           <ion-col size="2">Atualizar</ion-col>
           <ion-col size="2">Excluir</ion-col>
         </ion-row>
@@ -33,7 +31,6 @@
             <ion-col size="4">Luiz Brabo</ion-col>
             <ion-col>2</ion-col>
             <ion-col>13:00</ion-col>
-            <!-- <ion-col>Carla</ion-col> -->
             <ion-col><ion-icon  class="pencil" name="pencil-outline"></ion-icon></ion-col>
             <ion-col><ion-icon  class="trash" name="trash-bin-outline"></ion-icon></ion-col>
           </ion-row>
@@ -43,7 +40,6 @@
             <ion-col size="4">Luiz Brabo</ion-col>
             <ion-col>2</ion-col>
             <ion-col>13:00</ion-col>
-            <!-- <ion-col>Carla</ion-col> -->
             <ion-col><ion-icon  class="pencil" name="pencil-outline"></ion-icon></ion-col>
             <ion-col><ion-icon  class="trash" name="trash-bin-outline"></ion-icon></ion-col>
           </ion-row>
@@ -53,7 +49,6 @@
             <ion-col size="4">Luiz Brabo</ion-col>
             <ion-col>2</ion-col>
             <ion-col>13:00</ion-col>
-            <!-- <ion-col>Carla</ion-col> -->
             <ion-col><ion-icon  class="pencil" name="pencil-outline"></ion-icon></ion-col>
             <ion-col><ion-icon  class="trash" name="trash-bin-outline"></ion-icon></ion-col>
           </ion-row>
@@ -63,7 +58,6 @@
             <ion-col size="4">Luiz Brabo</ion-col>
             <ion-col>2</ion-col>
             <ion-col>13:00</ion-col>
-            <!-- <ion-col>Carla</ion-col> -->
             <ion-col><ion-icon  class="pencil" name="pencil-outline"></ion-icon></ion-col>
             <ion-col><ion-icon  class="trash" name="trash-bin-outline"></ion-icon></ion-col>
           </ion-row>
@@ -73,65 +67,51 @@
             <ion-col size="4">Luiz Brabo</ion-col>
             <ion-col>2</ion-col>
             <ion-col>13:00</ion-col>
-            <!-- <ion-col>Carla</ion-col> -->
             <ion-col><ion-icon  class="pencil" name="pencil-outline"></ion-icon></ion-col>
             <ion-col><ion-icon  class="trash" name="trash-bin-outline"></ion-icon></ion-col>
           </ion-row>
         </div>
       </ion-grid>
     </ion-card>
-  <!-- </cdk-virtual-scroll-viewport> -->
 </ion-content>
 
+<ion-footer> 
+  <ion-toolbar>      
+      <ion-buttons class="text-center">
+        <ion-grid class="grid">
+          <ion-row>
+            
+            <ion-col class="home text-cente">
+              <ion-tab-button class="home" href="/tabs/()">
+                <ion-icon class="labelMenu" name="home-outline"></ion-icon>      
+                <ion-label class="house">Home</ion-label>
+              </ion-tab-button>
+            </ion-col>
+      
+            <ion-col class="agenda text-cente">
+              <ion-tab-button class="agenda" href="/tabs/()">
+                <ion-icon name="calendar-outline"></ion-icon>
+                <ion-label class="calendar">Agenda</ion-label>
+                <ion-badge>6</ion-badge>
+              </ion-tab-button>
+            </ion-col>
+      
+            <ion-col class="perfil text-cente">
+              <ion-tab-button class="" href="/tabs/()">
+                <ion-icon class="labelMenu" name="people-outline"></ion-icon>
+                <ion-label class="people">Perfis</ion-label>
+              </ion-tab-button> 
+            </ion-col>
+      
+            <ion-col class="pagamento text-cente">
+              <ion-tab-button class="" href="/tabs/()">
+                <ion-icon class="labelMenu" name="wallet-outline"></ion-icon>     
+                <ion-label class="pay">Pagamentos</ion-label>
+              </ion-tab-button> 
+            </ion-col>
 
-<ion-tabs>
-  <ion-tab-bar style="overflow: auto; justify-content: flex-start;">
-    <ion-tab-button class="home" href="/tabs/()">
-      <ion-icon class="labelMenu" name="home-outline"></ion-icon>      
-      <ion-label class="house">Home</ion-label>
-    </ion-tab-button>
-    
-    <ion-tab-button class="agenda" href="/tabs/()">
-      <ion-icon name="calendar-outline"></ion-icon>
-      <ion-label class="calendar">Agenda</ion-label>
-      <ion-badge>6</ion-badge>
-    </ion-tab-button>
-
-    <ion-tab-button class="perfil" href="/tabs/()">
-      <ion-icon class="labelMenu" name="people-outline"></ion-icon>
-      <ion-label class="people">Perfis</ion-label>
-    </ion-tab-button> 
-
-    <ion-tab-button class="pagamento" href="/tabs/()">
-      <ion-icon class="labelMenu" name="wallet-outline"></ion-icon>     
-      <ion-label class="pay">Pagamentos</ion-label>
-    </ion-tab-button>       
-  </ion-tab-bar>
-</ion-tabs>
-
-<!-- <ion-footer-bar>
-  <ul class="example text-center">
-    <ion-tab-button  class="home example-item " href="/tabs/()" style="border-top-right-radius: 20px !important;">
-      <ion-icon class="labelMenu" name="home-outline"></ion-icon>      
-      <ion-label class="house">Home</ion-label>
-    </ion-tab-button>
-    
-    <ion-tab-button class="agenda example-item " href="/tabs/()">
-      <ion-icon name="calendar-outline"></ion-icon>
-      <ion-label class="calendar">Agenda</ion-label>
-      <ion-badge>6</ion-badge>
-    </ion-tab-button>
-
-    <ion-tab-button class="perfil example-item " href="/tabs/()">
-      <ion-icon class="labelMenu" name="people-outline"></ion-icon>
-      <ion-label class="people">Perfis</ion-label>
-    </ion-tab-button> 
-
-    <ion-tab-button class="pagamento example-item " href="/tabs/()">
-      <ion-icon class="labelMenu" name="wallet-outline"></ion-icon>     
-      <ion-label class="pay">Pagamentos</ion-label>
-    </ion-tab-button>       
-</ul>
- </ion-footer-bar> -->
-
-
+          </ion-row>
+        </ion-grid>
+      </ion-buttons> 
+    </ion-toolbar> 
+</ion-footer>

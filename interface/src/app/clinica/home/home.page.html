@@ -72,30 +72,46 @@
     </ion-card>
   </ion-content>
 
-  <ion-tabs>
-    <ion-tab-bar>
-      <ion-tab-button class="home" href="/tabs/()">
-        <ion-icon name="home-outline"></ion-icon>      
-        <ion-label class="house">Home</ion-label>
-      </ion-tab-button>
-      
-      <ion-tab-button class="agenda" href="/tabs/()">
-        <ion-icon class="labelMenu" name="calendar-outline"></ion-icon>
-        <ion-label class="calendar">Agenda</ion-label>
-        <ion-badge>6</ion-badge>
-      </ion-tab-button>
+  <ion-footer> 
+    <ion-toolbar>      
+        <ion-buttons class="text-center">
+          <ion-grid class="grid">
+            <ion-row>
+              
+              <ion-col class="home text-cente">
+                <ion-tab-button class="home" href="/tabs/()">
+                  <ion-icon name="home-outline"></ion-icon>      
+                  <ion-label class="house">Home</ion-label>
+                </ion-tab-button>
+              </ion-col>
+        
+              <ion-col class="agenda text-cente">
+                <ion-tab-button class="agenda" href="/tabs/()">
+                  <ion-icon class="labelMenu" name="calendar-outline"></ion-icon>
+                  <ion-label class="calendar">Agenda</ion-label>
+                  <ion-badge>6</ion-badge>
+                </ion-tab-button>
+              </ion-col>
+        
+              <ion-col class="perfil text-cente">
+                <ion-tab-button class="" href="/tabs/()">
+                  <ion-icon class="labelMenu" name="people-outline"></ion-icon>
+                  <ion-label class="people">Perfis</ion-label>
+                </ion-tab-button> 
+              </ion-col>
+        
+              <ion-col class="pagamento text-cente">
+                <ion-tab-button class="" href="/tabs/()">
+                  <ion-icon class="labelMenu" name="wallet-outline"></ion-icon>     
+                  <ion-label class="pay">Pagamentos</ion-label>
+                </ion-tab-button> 
+              </ion-col>
   
-      <ion-tab-button class="perfil" href="/tabs/()">
-        <ion-icon class="labelMenu" name="people-outline"></ion-icon>
-        <ion-label class="people">Perfis</ion-label>
-      </ion-tab-button> 
-  
-      <ion-tab-button class="pagamento" href="/tabs/()">
-        <ion-icon class="labelMenu" name="wallet-outline"></ion-icon>     
-        <ion-label class="pay">Pagamentos</ion-label>
-      </ion-tab-button>       
-    </ion-tab-bar>
-  </ion-tabs>
+            </ion-row>
+          </ion-grid>
+        </ion-buttons> 
+      </ion-toolbar> 
+  </ion-footer>
 
 
 

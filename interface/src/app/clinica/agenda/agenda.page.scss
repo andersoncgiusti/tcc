@@ -1,0 +1,127 @@
+ion-content {
+    --offset-bottom: auto!important;
+    --overflow: hidden;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.header {
+    --background: rgb(108, 169, 101);
+    color: white;
+}
+  
+.footer {
+    background-color: rgb(108, 169, 101) !important;
+} 
+  
+.grid {
+    margin: -5px;    
+    border: none;
+}
+  
+.home {
+    background-color: rgb(108, 169, 101) !important;
+    border-top-right-radius: 20px;
+    border-left: none;
+    border-right: none;
+    width: 25%;
+  }
+  
+  .agenda {      
+    background-color: white !important;
+    color: rgb(108, 169, 101);
+    border-left: none;
+    border-right: none;
+    width: 25%;
+  }
+  
+  .perfil {
+    background-color: rgb(108, 169, 101) !important;
+    border-top-left-radius: 20px;
+    border-left: none;
+    border-right: none;
+    width: 25%;
+  }
+  
+  .pagamento {
+    background-color: rgb(108, 169, 101) !important;
+    border-left: none;
+    border-right: none;
+    width: 25%;
+  }
+  
+  .house, .people, .pay, .labelMenu {
+    color: antiquewhite;
+  }
+  
+  
+ion-icon {
+    font-size: 32px;
+}
+  
+.labels {
+    margin-left: 50px;
+    font-size: 12px;
+}
+  
+.label {
+    margin-left: 30px;
+    font-size: 12px;
+}
+  
+.info {
+    color: black;
+}
+  
+ion-buttons {
+    // background-color: red;
+    height: 13%;
+    border: none;
+}
+  
+ion-badge {
+    background-color: red;
+    size: 32px;
+}
+
+ion-tab-bar {
+    height: 13%;
+    border: none;
+    display: inline !important;
+    float: left !important;
+}
+
+ion-grid {
+    color: black;
+}
+
+.results {
+    background-color: rgb(108, 169, 101);
+    border-radius: 5px;
+}
+
+.toolbar-container {
+    background-color: rgb(108, 169, 101);
+}
+
+.header {
+    --background: rgb(108, 169, 101);
+    color: white;
+}
+
+.subTitle, .pencil, .trash {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 12px !important;
+    font-weight: bold;
+}
+
+
+
+
+
