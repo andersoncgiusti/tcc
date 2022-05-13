@@ -21,6 +21,14 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
+  {
+    path: 'perfis',
+    loadChildren: () => import('./clinica/perfis/perfis.module').then( m => m.PerfisPageModule)
+  },
+  {
+    path: 'pagamento',
+    loadChildren: () => import('./clinica/pagamento/pagamento.module').then( m => m.PagamentoPageModule)
+  },
 ];
 
 @NgModule({
