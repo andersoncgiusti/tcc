@@ -26,6 +26,18 @@ export class PerfisPage implements OnInit {
     this.navCtrl.navigateRoot('pagamento');
   }
 
+  openCriar() {
+    this.navCtrl.navigateRoot('perfis');
+  }
+
+  openPaciente() {
+    this.navCtrl.navigateRoot('perfis/paciente');
+  }
+
+  openFisio() {
+    this.navCtrl.navigateRoot('perfis/fisioterapeuta');
+  }
+
   ngOnInit() {
   }
 
