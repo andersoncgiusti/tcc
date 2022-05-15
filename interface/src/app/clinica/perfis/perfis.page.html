@@ -3,8 +3,37 @@
     <ion-title>Perfil</ion-title>
   </ion-toolbar>
 </ion-header>
+  <ion-buttons class="text-center">
+    <ion-grid class="grid">
+      <ion-row>
+        
+        <ion-col class="person">
+          <ion-tab-button class="person" (click)="openHome()">
+            <ion-icon name="person-add-outline"></ion-icon>     
+            <ion-label class="criar">Criar Usuário</ion-label>
+          </ion-tab-button>
+        </ion-col>
+  
+        <ion-col class="body">
+          <ion-tab-button class="body" (click)="openAgenda()">
+            <ion-icon  class="labelMenu" name="body-outline"></ion-icon>
+            <ion-label class="paciente">Paciente</ion-label>
+          </ion-tab-button>
+        </ion-col>
+  
+        <ion-col class="man">
+          <ion-tab-button class="man" (click)="openPerfis()">
+            <ion-icon class="labelMenu" name="man-outline"></ion-icon>
+            <ion-label class="fisio">Fisioterapeuta</ion-label>
+          </ion-tab-button> 
+        </ion-col>
 
+      </ion-row>
+    </ion-grid>
+  </ion-buttons> 
+  
 <ion-content>
+  
 
 </ion-content>
 

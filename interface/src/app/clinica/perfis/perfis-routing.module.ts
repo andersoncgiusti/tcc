@@ -7,6 +7,14 @@ const routes: Routes = [
   {
     path: '',
     component: PerfisPage
+  },
+  {
+    path: 'paciente',
+    loadChildren: () => import('./paciente/paciente.module').then( m => m.PacientePageModule)
+  },
+  {
+    path: 'fisioterapeuta',
+    loadChildren: () => import('./fisioterapeuta/fisioterapeuta.module').then( m => m.FisioterapeutaPageModule)
   }
 ];
 

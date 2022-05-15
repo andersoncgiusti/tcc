@@ -51,8 +51,31 @@ ion-content {
     border-right: none;
     width: 25%;
   }
+
+  .person {
+    color: rgb(108, 169, 101) !important;
+    border-left: none;
+    border-right: none;
+    width: 25%;
+  }
+
+  .body {
+    background-color: rgb(108, 169, 101) !important;    
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-left: none;
+    border-right: none;
+    width: 25%;
+  }
+
+  .man {
+    background-color: rgb(108, 169, 101) !important;
+    border-left: none;
+    border-right: none;
+    width: 25%;
+  }
   
-  .house, .calendar, .pay, .labelMenu {
+  .house, .calendar, .pay, .labelMenu, .paciente, .fisio {
     color: antiquewhite;
   }
   
