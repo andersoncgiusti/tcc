@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-pagamento',
@@ -7,7 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagamentoPage implements OnInit {
 
-  constructor() { }
+  constructor(private navCtrl: NavController) {}
+
+  openHome() {
+    this.navCtrl.navigateRoot('home');
+  }
+
+  openAgenda() {
+    this.navCtrl.navigateRoot('agenda');
+  }
+
+  openPerfis() {
+    this.navCtrl.navigateRoot('perfis');
+  }
+
+  openPagamento() {
+    this.navCtrl.navigateRoot('pagamento');
+  }
 
   ngOnInit() {
   }

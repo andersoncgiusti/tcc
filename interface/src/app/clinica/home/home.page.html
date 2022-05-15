@@ -78,30 +78,30 @@
           <ion-grid class="grid">
             <ion-row>
               
-              <ion-col class="home text-cente">
-                <ion-tab-button class="home" href="/tabs/()">
+              <ion-col class="home">
+                <ion-tab-button class="home" (click)="openHome()">
                   <ion-icon name="home-outline"></ion-icon>      
                   <ion-label class="house">Home</ion-label>
                 </ion-tab-button>
               </ion-col>
         
-              <ion-col class="agenda text-cente">
-                <ion-tab-button class="agenda" href="/tabs/()">
+              <ion-col class="agenda">
+                <ion-tab-button class="agenda" (click)="openAgenda()">
                   <ion-icon class="labelMenu" name="calendar-outline"></ion-icon>
                   <ion-label class="calendar">Agenda</ion-label>
                   <ion-badge>6</ion-badge>
                 </ion-tab-button>
               </ion-col>
         
-              <ion-col class="perfil text-cente">
-                <ion-tab-button class="" href="/tabs/()">
+              <ion-col class="perfil">
+                <ion-tab-button class="perfil" (click)="openPerfis()">
                   <ion-icon class="labelMenu" name="people-outline"></ion-icon>
                   <ion-label class="people">Perfis</ion-label>
                 </ion-tab-button> 
               </ion-col>
         
-              <ion-col class="pagamento text-cente">
-                <ion-tab-button class="" href="/tabs/()">
+              <ion-col class="pagamento">
+                <ion-tab-button class="pagamento" (click)="openPagamento()">
                   <ion-icon class="labelMenu" name="wallet-outline"></ion-icon>     
                   <ion-label class="pay">Pagamentos</ion-label>
                 </ion-tab-button> 

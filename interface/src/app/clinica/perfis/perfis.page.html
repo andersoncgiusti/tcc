@@ -1,9 +1,50 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>perfis</ion-title>
+  <ion-toolbar class="header">
+    <ion-title>Perfil</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
 </ion-content>
+
+<ion-footer> 
+  <ion-toolbar>      
+      <ion-buttons class="text-center">
+        <ion-grid class="grid">
+          <ion-row>
+            
+            <ion-col class="home">
+              <ion-tab-button class="home" (click)="openHome()">
+                <ion-icon class="labelMenu" name="home-outline"></ion-icon>      
+                <ion-label class="house">Home</ion-label>
+              </ion-tab-button>
+            </ion-col>
+      
+            <ion-col class="agenda">
+              <ion-tab-button class="agenda" (click)="openAgenda()">
+                <ion-icon class="labelMenu" name="calendar-outline"></ion-icon>
+                <ion-label class="calendar">Agenda</ion-label>
+                <ion-badge>6</ion-badge>
+              </ion-tab-button>
+            </ion-col>
+      
+            <ion-col class="perfil">
+              <ion-tab-button class="perfil" (click)="openPerfis()">
+                <ion-icon name="people-outline"></ion-icon>
+                <ion-label class="people">Perfis</ion-label>
+              </ion-tab-button> 
+            </ion-col>
+      
+            <ion-col class="pagamento">
+              <ion-tab-button class="labelMenu" (click)="openPagamento()">
+                <ion-icon class="labelMenu" name="wallet-outline"></ion-icon>     
+                <ion-label class="pay">Pagamentos</ion-label>
+              </ion-tab-button> 
+            </ion-col>
+
+          </ion-row>
+        </ion-grid>
+      </ion-buttons> 
+    </ion-toolbar> 
+</ion-footer>

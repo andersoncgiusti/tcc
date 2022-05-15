@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -9,6 +10,22 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 export class HomePage {
   faCoffee = faCoffee;
 
-  constructor() {}
+  constructor(private navCtrl: NavController) {}
+
+  openHome() {
+    this.navCtrl.navigateRoot('home');
+  }
+
+  openAgenda() {
+    this.navCtrl.navigateRoot('agenda');
+  }
+
+  openPerfis() {
+    this.navCtrl.navigateRoot('perfis');
+  }
+
+  openPagamento() {
+    this.navCtrl.navigateRoot('pagamento');
+  }
 
 }
