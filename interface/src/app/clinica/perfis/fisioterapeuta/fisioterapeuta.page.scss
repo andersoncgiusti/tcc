@@ -53,29 +53,29 @@ ion-content {
   }
 
   .person {
-    color: rgb(108, 169, 101) !important;
+    background-color: rgb(108, 169, 101) !important;   
     border-left: none;
     border-right: none;
     width: 25%;
   }
 
   .body {
-    background-color: rgb(108, 169, 101) !important;    
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    background-color: rgb(108, 169, 101) !important; 
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     border-left: none;
     border-right: none;
     width: 25%;
   }
 
   .man {
-    background-color: rgb(108, 169, 101) !important;
+    color: rgb(108, 169, 101) !important;
     border-left: none;
     border-right: none;
     width: 25%;
   }
   
-  .house, .calendar, .pay, .labelMenu, .paciente, .fisio {
+  .house, .calendar, .pay, .labelMenu, .criar, .paciente {
     color: antiquewhite;
   }
   

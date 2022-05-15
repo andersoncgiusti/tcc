@@ -41,4 +41,14 @@ export class PerfisPage implements OnInit {
   ngOnInit() {
   }
 
+  toDisplay = false;
+  
+  paciente() {
+    this.toDisplay = !this.toDisplay;    
+  }
+
+  fisioterapeuta() {
+    this.toDisplay = !this.toDisplay;    
+  }
+
 }

@@ -33,7 +33,64 @@
   </ion-buttons> 
   
 <ion-content>
-  
+
+  <form class="mt-5">
+    <ion-item>
+      <ion-label>Usuário</ion-label>
+      <ion-select class="select">
+        <ion-select-option value="paciente" (click)="paciente()">Paciente</ion-select-option>
+        <ion-select-option value="fisioterapeuta" (click)="fisioterapeuta()">Fisioterapeuta</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <div *ngIf="toDisplay">
+      <ion-item>
+        <ion-label>Nome</ion-label>
+        <ion-input type="text" placeholder="" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Sobrenome</ion-label>
+        <ion-input type="text" placeholder="" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Idade</ion-label>
+        <ion-input min="0" type="number" placeholder="" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>CPF</ion-label>
+        <ion-input type="text" placeholder="" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Endereço</ion-label>
+        <ion-input type="text" placeholder="" required></ion-input>
+      </ion-item>
+        <ion-button class="mt-3" type="submit" expand="block">CADASTRAR</ion-button>  
+    </div>  
+    
+    <div *ngIf="toDisplay">
+      <ion-item>
+        <ion-label>Nome</ion-label>
+        <ion-input type="text" placeholder="" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Sobrenome</ion-label>
+        <ion-input type="text" placeholder="" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Idade</ion-label>
+        <ion-input min="0" type="number" placeholder="" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>CPF</ion-label>
+        <ion-input type="text" placeholder="" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Endereço</ion-label>
+        <ion-input type="text" placeholder="" required></ion-input>
+      </ion-item>
+        <ion-button class="mt-3" type="submit" expand="block">CADASTRAR</ion-button>  
+    </div> 
+  </form>  
 
 </ion-content>
 

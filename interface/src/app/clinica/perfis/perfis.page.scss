@@ -144,6 +144,20 @@ ion-grid {
     font-weight: bold;
 }
 
+// :host(.item-has-focus) .item-native {
+//     --highlight-color-focused: red;
+// }
+
+.item-has-focus {
+    --highlight-color-focused: rgb(108, 169, 101);
+}
+
+ion-button {
+    --background: rgb(108, 169, 101);
+    --border-radius: 20px;
+}
+
+
 
 
 
