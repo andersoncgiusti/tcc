@@ -60,9 +60,7 @@ ion-content {
   }
 
   .body {
-    background-color: rgb(108, 169, 101) !important;    
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    color: rgb(108, 169, 101) !important;  
     border-left: none;
     border-right: none;
     width: 25%;
@@ -70,12 +68,14 @@ ion-content {
 
   .man {
     background-color: rgb(108, 169, 101) !important;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     border-left: none;
     border-right: none;
     width: 25%;
   }
   
-  .house, .calendar, .pay, .labelMenu, .paciente, .fisio {
+  .house, .calendar, .pay, .labelMenu, .fisio {
     color: antiquewhite;
   }
   
@@ -155,6 +155,10 @@ ion-grid {
 ion-button {
     --background: rgb(108, 169, 101);
     --border-radius: 20px;
+}
+
+.texto {
+    font-size: 18px;
 }
 
 
