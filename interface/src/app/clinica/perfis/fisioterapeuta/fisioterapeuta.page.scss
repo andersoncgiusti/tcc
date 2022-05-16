@@ -26,58 +26,61 @@ ion-content {
     border-left: none;
     border-right: none;
     width: 25%;
-  }
+}
   
-  .agenda {      
+.agenda {      
     background-color: rgb(108, 169, 101) !important;   
     border-top-right-radius: 20px;
     border-left: none;
     border-right: none;
     width: 25%;
-  }
+}
   
-  .perfil {
+.perfil {
     background-color: white !important;
     color: rgb(108, 169, 101);
     border-left: none;
     border-right: none;
     width: 25%;
-  }
+}
   
-  .pagamento {
+.pagamento {
     background-color: rgb(108, 169, 101) !important;
     border-top-left-radius: 20px;
     border-left: none;
     border-right: none;
     width: 25%;
-  }
+}
 
-  .person {
-    background-color: rgb(108, 169, 101) !important;   
+.person {
+    color: rgb(108, 169, 101) !important;   
     border-left: none;
     border-right: none;
     width: 25%;
-  }
+}
 
-  .body {
-    background-color: rgb(108, 169, 101) !important; 
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+.body { 
+    color: rgb(108, 169, 101) !important;  
     border-left: none;
     border-right: none;
     width: 25%;
-  }
+}
 
-  .man {
+.man {
     color: rgb(108, 169, 101) !important;
+    border-bottom: 2px solid rgb(108, 169, 101) !important; 
     border-left: none;
     border-right: none;
     width: 25%;
-  }
+}
   
-  .house, .calendar, .pay, .labelMenu, .criar, .paciente {
+.house, .calendar, .pay, .labelMenu, .criar, .paciente {
     color: antiquewhite;
-  }
+}
+
+.icon {
+    color: rgb(108, 169, 101) !important;
+}
   
   
 ion-icon {
@@ -142,6 +145,15 @@ ion-grid {
 .title {
     font-size: 12px !important;
     font-weight: bold;
+}
+
+.item-has-focus {
+    --highlight-color-focused: rgb(108, 169, 101);
+}
+
+ion-button {
+    --background: rgb(108, 169, 101);
+    --border-radius: 20px;
 }
 
 

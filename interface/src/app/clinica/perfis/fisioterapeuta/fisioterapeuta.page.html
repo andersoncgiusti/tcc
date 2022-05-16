@@ -16,15 +16,15 @@
   
         <ion-col class="body">
           <ion-tab-button class="body" (click)="openPaciente()">
-            <ion-icon  class="labelMenu" name="body-outline"></ion-icon>
-            <ion-label class="paciente">Paciente</ion-label>
+            <ion-icon  class="labelMenu icon" name="body-outline"></ion-icon>
+            <ion-label class="paciente icon">Paciente</ion-label>
           </ion-tab-button>
         </ion-col>
   
         <ion-col class="man">
           <ion-tab-button class="man" (click)="openFisio()">
-            <ion-icon name="man-outline"></ion-icon>
-            <ion-label class="fisio">Fisioterapeuta</ion-label>
+            <ion-icon class="labelMenu icon" name="man-outline"></ion-icon>
+            <ion-label class="fisio icon">Fisioterapeuta</ion-label>
           </ion-tab-button> 
         </ion-col>
 
@@ -34,7 +34,31 @@
   
 <ion-content>
 
-  
+  <form class="mt-4">
+    <div>
+      <ion-item>
+        <ion-label>Nome</ion-label>
+        <ion-input type="text" placeholder="" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Sobrenome</ion-label>
+        <ion-input type="text" placeholder="" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Idade</ion-label>
+        <ion-input min="0" type="number" placeholder="" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>CPF</ion-label>
+        <ion-input type="text" placeholder="" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Endereço</ion-label>
+        <ion-input type="text" placeholder="" required></ion-input>
+      </ion-item>
+        <ion-button class="mt-3" type="submit" expand="block">CADASTRAR</ion-button>  
+    </div> 
+  </form>   
 
 </ion-content>
 

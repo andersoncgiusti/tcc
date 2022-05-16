@@ -23,7 +23,7 @@
   
         <ion-col class="man">
           <ion-tab-button class="man" (click)="openFisio()">
-            <ion-icon class="labelMenu" name="man-outline"></ion-icon>
+            <ion-icon name="man-outline"></ion-icon>
             <ion-label class="fisio">Fisioterapeuta</ion-label>
           </ion-tab-button> 
         </ion-col>
@@ -34,75 +34,7 @@
   
 <ion-content>
 
-  <ion-buttons class="text-center mt-3">
-    <ion-grid>
-      <ion-row>
-        
-        <ion-col>
-          <ion-tab-button class="texto" (click)="paciente(); hiddenFisio();">  
-            <ion-label>Paciente</ion-label>
-          </ion-tab-button>
-        </ion-col>
-  
-        <ion-col>
-          <ion-tab-button class="texto" (click)="fisioterapeuta(); hiddenPaciente();">
-            <ion-label>Fisioterapeuta</ion-label>
-          </ion-tab-button>
-        </ion-col>
-
-      </ion-row>
-    </ion-grid>
-  </ion-buttons> 
-
-  <form class="mt-4">    
-    <div *ngIf="toDisplayPaciente">
-      <ion-item>
-        <ion-label>Nome</ion-label>
-        <ion-input type="text" placeholder="" required></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label>Sobrenome</ion-label>
-        <ion-input type="text" placeholder="" required></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label>Idade</ion-label>
-        <ion-input min="0" type="number" placeholder="" required></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label>CPF</ion-label>
-        <ion-input type="text" placeholder="" required></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label>Endereço</ion-label>
-        <ion-input type="text" placeholder="" required></ion-input>
-      </ion-item>
-        <ion-button class="mt-3" type="submit" expand="block">CADASTRAR</ion-button>  
-    </div>  
-    
-    <div *ngIf="toDisplayFisio" style="background-color: red;">
-      <ion-item>
-        <ion-label>Nome</ion-label>
-        <ion-input type="text" placeholder="" required></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label>Sobrenome</ion-label>
-        <ion-input type="text" placeholder="" required></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label>Idade</ion-label>
-        <ion-input min="0" type="number" placeholder="" required></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label>CPF</ion-label>
-        <ion-input type="text" placeholder="" required></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label>Endereço</ion-label>
-        <ion-input type="text" placeholder="" required></ion-input>
-      </ion-item>
-        <ion-button class="mt-3" type="submit" expand="block">CADASTRAR</ion-button>  
-    </div> 
-  </form>  
+     
 
 </ion-content>
 

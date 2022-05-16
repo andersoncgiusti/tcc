@@ -67,15 +67,13 @@ ion-content {
   }
 
   .man {
-    background-color: rgb(108, 169, 101) !important;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    color: rgb(108, 169, 101) !important;
     border-left: none;
     border-right: none;
     width: 25%;
   }
   
-  .house, .calendar, .pay, .labelMenu, .fisio {
+  .house, .calendar, .pay, .labelMenu {
     color: antiquewhite;
   }
   
