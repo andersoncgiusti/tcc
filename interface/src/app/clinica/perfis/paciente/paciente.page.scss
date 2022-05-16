@@ -53,12 +53,9 @@ ion-content {
 }
 
 .person {
-    background-color: rgb(108, 169, 101) !important;       
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    color: rgb(108, 169, 101) !important;   
     border-left: none;
     border-right: none;
-    width: 25%;
 }
 
 .body {
@@ -76,14 +73,13 @@ ion-content {
     width: 25%;
 }
   
-.house, .calendar, .pay, .labelMenu, .criar, .fisio {
+.house, .calendar, .pay, .labelMenu, .fisio {
     color: antiquewhite;
 }
 
 .icon {
     color: rgb(108, 169, 101) !important;
-}
-  
+}  
   
 ion-icon {
     font-size: 32px;

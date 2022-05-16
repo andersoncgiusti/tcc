@@ -39,28 +39,7 @@ export class PerfisPage implements OnInit {
   }
 
   
-  toDisplayPaciente = false;
-  toDisplayFisio = false;
-
-  displayPaciente = true;
-  displayFisio = true;
-  
-  paciente() {
-    this.toDisplayPaciente = !this.toDisplayPaciente;  
-  }
-  
-  fisioterapeuta() {
-    this.toDisplayFisio = !this.toDisplayFisio; 
-  }
-
-  hiddenPaciente() {
-    this.displayPaciente = !this.displayPaciente; 
-  }
-
-  hiddenFisio() {
-    this.displayFisio = !this.displayFisio;  
-  }
-  
+ 
   ngOnInit() {
   }
 }

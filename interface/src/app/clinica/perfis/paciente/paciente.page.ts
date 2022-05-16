@@ -38,6 +38,15 @@ export class PacientePage implements OnInit {
     this.navCtrl.navigateRoot('perfis/fisioterapeuta');
   }
 
+  toDisplayPaciente = false;
+  
+  paciente() {
+    this.toDisplayPaciente = !this.toDisplayPaciente;  
+  }
+  
+  
+  
+
   ngOnInit() {
   }
 
