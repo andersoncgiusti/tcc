@@ -1,0 +1,34 @@
+
+// ion-content {
+//     --offset-bottom: auto!important;
+//     --overflow: hidden;
+//     overflow: auto;
+//     &::-webkit-scrollbar {
+//         display: none;
+//     }
+// }
+
+.box {
+    display: ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    transform: translateY(auto);
+}
+
+.header {
+    --background: rgb(108, 169, 101);
+    color: white;
+}
+
+.item-has-focus {
+    --highlight-color-focused: rgb(108, 169, 101);
+}
+
+.back {
+    padding: 10px;
+    font-size: 25px;
+    color: rgb(108, 169, 101);
+}

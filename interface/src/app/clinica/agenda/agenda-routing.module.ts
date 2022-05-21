@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: AgendaPage
+  },
+  {
+    path: 'agendamentos',
+    loadChildren: () => import('./agendamentos/agendamentos.module').then( m => m.AgendamentosPageModule)
   }
 ];
 

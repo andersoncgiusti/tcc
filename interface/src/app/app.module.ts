@@ -23,7 +23,7 @@ library.add(fas, far, fab); //for add icons
     BrowserModule, 
     IonicModule.forRoot(), 
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],

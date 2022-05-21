@@ -5,72 +5,43 @@
 </ion-header>
 
 <ion-content>
-    <ion-card>
-      <ion-card-header>
-        <ion-card-title>Vizualizar Agendamentos</ion-card-title>
-      </ion-card-header>
-
-      <ion-card-content class="text-center">
+  <ion-card-title class="text-center mt-3">Vizualizar Agendamentos</ion-card-title>
+  <div class="calendarario">
+    <ion-icon name="calendar-outline" (click)="openCalendar();" *ngIf="calendar"></ion-icon>
+    <ion-icon name="close-outline" *ngIf="displayCalendar" (click)="close()"></ion-icon>
+  </div>
+    <ion-card *ngIf="displayCalendar">
+      <ion-card-content class="text-center">        
         <div class="text-center">
-          <ion-datetime locale="pt-BR"></ion-datetime>
+          <ion-datetime 
+            locale="pt-BR" 
+            #datetime  
+            (ionChange)="setToday(datetime.value)">
+          </ion-datetime>
         </div>
       </ion-card-content>
-    </ion-card>
+    </ion-card>  
 
-    <ion-card>
+    <ion-card-title class="text-center mt-3">Agendamentos do dia</ion-card-title>
+
+    <ion-grid class="text-center mt-2 title-agenda">
+      <ion-row>
+        <ion-col>Horário</ion-col>
+        <ion-col>Sessão Qtd.</ion-col>
+        <ion-col size="4">Paciente</ion-col>
+        <ion-col>Ver</ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-card class="text-center title-agenda">
       <ion-grid>
-        <ion-row class="text-center title">
-          <ion-col size="4">Pacientes</ion-col>
-          <ion-col size="2">Sessões</ion-col>
-          <ion-col size="2">Horário</ion-col>
-          <ion-col size="2">Atualizar</ion-col>
-          <ion-col size="2">Excluir</ion-col>
-        </ion-row>
         <div>
-          <ion-row class="text-center results mb-3 subTitle">
-            <ion-col size="4">Luiz Brabo</ion-col>
-            <ion-col>2</ion-col>
+          <ion-row>
             <ion-col>13:00</ion-col>
-            <ion-col><ion-icon  class="pencil" name="pencil-outline"></ion-icon></ion-col>
-            <ion-col><ion-icon  class="trash" name="trash-bin-outline"></ion-icon></ion-col>
-          </ion-row>
-        </div>
-        <div>
-          <ion-row class="text-center results mb-3 subTitle">
-            <ion-col size="4">Luiz Brabo</ion-col>
             <ion-col>2</ion-col>
-            <ion-col>13:00</ion-col>
-            <ion-col><ion-icon  class="pencil" name="pencil-outline"></ion-icon></ion-col>
-            <ion-col><ion-icon  class="trash" name="trash-bin-outline"></ion-icon></ion-col>
-          </ion-row>
-        </div>
-        <div>
-          <ion-row class="text-center results mb-3 subTitle">
             <ion-col size="4">Luiz Brabo</ion-col>
-            <ion-col>2</ion-col>
-            <ion-col>13:00</ion-col>
-            <ion-col><ion-icon  class="pencil" name="pencil-outline"></ion-icon></ion-col>
-            <ion-col><ion-icon  class="trash" name="trash-bin-outline"></ion-icon></ion-col>
+            <ion-col><ion-icon  class="eye" name="eye-outline" (click)="openCadatros()"></ion-icon></ion-col>
           </ion-row>
-        </div>
-        <div>
-          <ion-row class="text-center results mb-3 subTitle">
-            <ion-col size="4">Luiz Brabo</ion-col>
-            <ion-col>2</ion-col>
-            <ion-col>13:00</ion-col>
-            <ion-col><ion-icon  class="pencil" name="pencil-outline"></ion-icon></ion-col>
-            <ion-col><ion-icon  class="trash" name="trash-bin-outline"></ion-icon></ion-col>
-          </ion-row>
-        </div>
-        <div>
-          <ion-row class="text-center results mb-3 subTitle">
-            <ion-col size="4">Luiz Brabo</ion-col>
-            <ion-col>2</ion-col>
-            <ion-col>13:00</ion-col>
-            <ion-col><ion-icon  class="pencil" name="pencil-outline"></ion-icon></ion-col>
-            <ion-col><ion-icon  class="trash" name="trash-bin-outline"></ion-icon></ion-col>
-          </ion-row>
-        </div>
+        </div>     
       </ion-grid>
     </ion-card>
 </ion-content>

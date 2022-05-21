@@ -97,9 +97,9 @@ ion-grid {
     color: black;
 }
 
-.results {
-    background-color: rgb(108, 169, 101);
-    border-radius: 5px;
+.results, ion-card {
+    border: 1px solid rgb(108, 169, 101);
+    // border-radius: 5px;
 }
 
 .toolbar-container {
@@ -111,14 +111,22 @@ ion-grid {
     color: white;
 }
 
-.subTitle, .pencil, .trash {
-    font-size: 12px;
+.eye {
+    font-size: 18px;
     font-weight: bold;
 }
 
 .title {
     font-size: 12px !important;
     font-weight: bold;
+}
+
+.title-agenda {
+    font-size: 12px !important;
+}
+
+.calendarario {
+    padding: 20px;
 }
 
 

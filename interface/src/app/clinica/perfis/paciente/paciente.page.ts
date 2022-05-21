@@ -10,6 +10,9 @@ export class PacientePage implements OnInit {
 
   constructor(private navCtrl: NavController) {}
 
+  ngOnInit() {
+  }
+
   openHome() {
     this.navCtrl.navigateRoot('home');
   }
@@ -43,11 +46,16 @@ export class PacientePage implements OnInit {
   paciente() {
     this.toDisplayPaciente = !this.toDisplayPaciente;  
   }
+
+  displayPaciente = false;
+  
+  openList() {
+    this.displayPaciente = !this.displayPaciente;  
+  }
   
   
   
 
-  ngOnInit() {
-  }
+  
 
 }

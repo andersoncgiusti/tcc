@@ -10,6 +10,9 @@ export class FisioterapeutaPage implements OnInit {
 
   constructor(private navCtrl: NavController) {}
 
+  ngOnInit() {
+  }
+
   openHome() {
     this.navCtrl.navigateRoot('home');
   }
@@ -38,13 +41,18 @@ export class FisioterapeutaPage implements OnInit {
     this.navCtrl.navigateRoot('perfis/fisioterapeuta');
   }
 
-  toDisplayPaciente = false;
+  toDisplayFisio = false;
   
   fisio() {
-    this.toDisplayPaciente = !this.toDisplayPaciente;  
+    this.toDisplayFisio = !this.toDisplayFisio;  
   }
 
-  ngOnInit() {
+  displayFisio = false;
+  
+  openList() {
+    this.displayFisio = !this.displayFisio;  
   }
+
+  
 
 }
