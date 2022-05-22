@@ -1,18 +1,18 @@
 {
   "name": "tcc",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
+  "description": "API TCC",
+  "author": "Anderson Giusti",
   "license": "ISC",
   "dependencies": {
     "@angular/cli": "^13.3.4",
     "body-parser": "^1.20.0",
     "express": "^4.18.1",
     "mysql2": "^2.3.3",
+    "routes": "^2.1.0",
     "sequelize": "^6.19.0"
+  },
+  "scripts": {
+    "start": "nodemon ./src/app.js"
   }
 }
