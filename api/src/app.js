@@ -1,29 +1,13 @@
 const express = require('express')
 const app = express()
-const database = require('../src/models/db')
-const port = 3000
 
 //imports routes
-const statusRouter = require('./routes/status.route')
-
-//conection with database
-database.authenticate().then(() => {
-    console.log("Successfully connected to database")
-}).catch(err => {
-    console.log(err)
-})
+const statusRouter = require('./routes/status.router')
+const agendaRouter = require('./routes/agenda.router')
 
 app.use(express.urlencoded({ extended: false })) 
 app.use(express.json()) 
 app.use(statusRouter)
+app.use(agendaRouter)
 
-
-
-//server
-app.listen(port, (err) => {
-    if (err) {
-        console.log('No server')
-    } else {
-        console.log('Server online url http://localhost:3000/')
-    }
-})
+module.exports = app
