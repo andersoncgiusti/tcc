@@ -1,0 +1,26 @@
+ion-content {
+    --offset-bottom: auto!important;
+    --overflow: hidden;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+  
+.header {
+    --background: rgb(108, 169, 101);
+    color: white;
+}
+
+ion-footer {
+    border-top: 2px solid rgb(108, 169, 101) !important;
+} 
+
+.people, .pay, .labelMenu, .agenda {
+    color: rgb(108, 169, 101) !important;
+}
+
+.home {
+    --background-color: rgb(108, 169, 101) !important;
+    border-radius: 10px;
+}

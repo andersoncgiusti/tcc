@@ -6,9 +6,9 @@
 
 <ion-content>
   <ion-card-title class="text-center mt-3">Vizualizar Agendamentos</ion-card-title>
-  <div class="calendarario">
+  <div class="calendario">
     <ion-icon name="calendar-outline" (click)="openCalendar();" *ngIf="calendar"></ion-icon>
-    <ion-icon name="close-outline" *ngIf="displayCalendar" (click)="close()"></ion-icon>
+    <ion-icon name="close-outline" (click)="close()" *ngIf="displayCalendar" ></ion-icon>
   </div>
     <ion-card *ngIf="displayCalendar">
       <ion-card-content class="text-center">        

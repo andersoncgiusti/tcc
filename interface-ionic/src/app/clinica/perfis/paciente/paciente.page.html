@@ -26,40 +26,57 @@
   </ion-buttons> 
 
 <ion-content>
-
-  <ion-icon class="btn person mt-3" name="person-add-outline" (click)="paciente()"></ion-icon><br> 
-  
+  <div class="cadastro">
+    <ion-icon class="btn person mt-3" name="person-add-outline" (click)="paciente()" *ngIf="cadastro"></ion-icon>
+    <ion-icon name="close-outline"  class="btn person mt-3" (click)="close()" *ngIf="toDisplayPaciente"></ion-icon>
+  </div>  
   <ion-card *ngIf="toDisplayPaciente">
-    <form class="mt-4">    
+    <form class="mt-4">
       <div>
         <ion-item>
           <ion-label>Nome</ion-label>
-          <ion-input type="text" placeholder="" required></ion-input>
+          <ion-input type="text" placeholder="Digite o nome" required></ion-input>
         </ion-item>
         <ion-item>
           <ion-label>Sobrenome</ion-label>
-          <ion-input type="text" placeholder="" required></ion-input>
+          <ion-input type="text" placeholder="Digite o sobrenome" required></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label>Idade</ion-label>
-          <ion-input min="0" type="number" placeholder="" required></ion-input>
+          <ion-label>Nascimento</ion-label>
+          <ion-input type="text" min="0" placeholder="Digite o nascimento" required></ion-input>
         </ion-item>
         <ion-item>
           <ion-label>CPF</ion-label>
-          <ion-input type="text" placeholder="" required></ion-input>
+          <ion-input type="text" placeholder="Digite o CPF" required></ion-input>
         </ion-item>
         <ion-item>
           <ion-label>Endereço</ion-label>
-          <ion-input type="text" placeholder="" required></ion-input>
+          <ion-input type="text" placeholder="Digite a rua/avenida" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Número</ion-label>
+          <ion-input type="text" placeholder="Digite o N°" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Completo</ion-label>
+          <ion-input type="text" placeholder="Digite o complemento"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Cidade</ion-label>
+          <ion-input type="text" placeholder="Digite a cidade"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Estado</ion-label>
+          <ion-input type="text" placeholder="Digite o estado"></ion-input>
         </ion-item>
           <ion-button class="mt-3" type="submit" expand="block">CADASTRAR</ion-button>  
-      </div>  
-    </form>
+      </div> 
+    </form>   
   </ion-card>
   
-  <ion-icon class="btn person mt-3" name="list-outline" (click)="openList()"></ion-icon>  
-
-  <ion-card  class="text-center" *ngIf="displayPaciente">
+  <!-- <ion-icon class="btn person mt-3" name="list-outline" (click)="openList()"></ion-icon>   -->
+  <ion-card-title class="text-center mt-3">Vizualizar Cadastros</ion-card-title>
+  <ion-card  class="text-center">
     <ion-grid>
       <ion-row>
         <ion-col size="4">Usuário</ion-col>

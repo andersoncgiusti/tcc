@@ -41,18 +41,24 @@ export class PacientePage implements OnInit {
     this.navCtrl.navigateRoot('perfis/fisioterapeuta');
   }
 
+  // displayPaciente = false;
+  
+  // openList() {
+  //   this.displayPaciente = !this.displayPaciente;  
+  // }
+  
   toDisplayPaciente = false;
+  cadastro = true;
+
+  close() {
+    this.cadastro = !this.cadastro; 
+    this.toDisplayPaciente = !this.toDisplayPaciente; 
+  }
   
   paciente() {
     this.toDisplayPaciente = !this.toDisplayPaciente;  
+    this.cadastro = !this.cadastro; 
   }
-
-  displayPaciente = false;
-  
-  openList() {
-    this.displayPaciente = !this.displayPaciente;  
-  }
-  
   
   
 

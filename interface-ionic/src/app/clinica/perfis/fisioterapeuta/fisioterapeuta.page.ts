@@ -39,19 +39,27 @@ export class FisioterapeutaPage implements OnInit {
 
   openFisio() {
     this.navCtrl.navigateRoot('perfis/fisioterapeuta');
-  }
+  }  
 
+  // displayFisio = false;
+  
+  // openList() {
+  //   this.displayFisio = !this.displayFisio;  
+  // }
+
+  cadastro = true;
   toDisplayFisio = false;
   
   fisio() {
     this.toDisplayFisio = !this.toDisplayFisio;  
+    this.cadastro = !this.cadastro; 
   }
 
-  displayFisio = false;
-  
-  openList() {
-    this.displayFisio = !this.displayFisio;  
+  close() {
+    this.cadastro = !this.cadastro; 
+    this.toDisplayFisio = !this.toDisplayFisio; 
   }
+
 
   
 

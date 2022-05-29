@@ -10,6 +10,9 @@ export class PerfisPage implements OnInit {
 
   constructor(private navCtrl: NavController) {}
 
+  ngOnInit() {
+  }
+
   openHome() {
     this.navCtrl.navigateRoot('home');
   }
@@ -40,6 +43,5 @@ export class PerfisPage implements OnInit {
 
   
  
-  ngOnInit() {
-  }
+  
 }
