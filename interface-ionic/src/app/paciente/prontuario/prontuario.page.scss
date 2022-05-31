@@ -1,0 +1,77 @@
+ion-content {
+    --offset-bottom: auto!important;
+    --overflow: hidden;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+  
+.header {
+    --background: rgb(108, 169, 101);
+    color: white;
+}
+
+ion-footer {
+    border-top: 2px solid rgb(108, 169, 101) !important;
+} 
+
+.prontuario {
+    color: red !important;
+    border-left: none;
+    border-right: none;
+    width: 25%;
+}
+  
+.agenda {    
+    font-weight: bold;
+    border-left: none;
+    border-right: none;
+    width: 25%;
+}
+  
+.perfil {
+    border-left: none;
+    border-right: none;
+    width: 25%;
+}
+  
+.pagamento {
+    border-left: none;
+    border-right: none;
+    width: 25%;
+}
+
+ion-icon {
+    font-size: 32px;
+}
+  
+ion-buttons {
+    // background-color: red;
+    height: 13%;
+    border: none;
+}
+  
+ion-badge {
+    background-color: blue;
+    size: 32px;
+}
+
+.icons {
+    color: rgb(108, 169, 101) !important;
+}
+
+.item-has-focus {
+    --highlight-color-focused: white;
+}
+
+.title {
+    font-size: 12px !important;
+    font-weight: bold;
+}
+
+.pront {
+    padding: 15px;
+    --background: rgb(108, 169, 101) !important;
+    color: white;
+}

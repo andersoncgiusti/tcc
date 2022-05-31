@@ -1,9 +1,56 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>prontuario</ion-title>
+  <ion-toolbar class="header">
+    <ion-title>Prontuário</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-card-title class="text-center mt-3">Seu prontuário</ion-card-title>
+  <ion-card-title class="text-center mt-3 title">Sem nenhuma anotação</ion-card-title>
+  <ion-card class="pront">
+    <ion-label>Seus agendamentos</ion-label>
+  </ion-card>
+  <ion-card-title class="text-center mt-3 title">30/05/2022</ion-card-title>
 
 </ion-content>
+
+<ion-footer> 
+  <ion-toolbar>      
+      <ion-buttons class="text-center icons">
+        <ion-grid class="grid">
+          <ion-row>        
+                  
+            <ion-col class="agenda">
+              <ion-tab-button class="icons">
+                <ion-icon name="calendar-outline"></ion-icon>
+                <!-- <ion-label class="calendar">Agenda</ion-label> -->
+                <!-- <ion-badge>6</ion-badge> -->
+              </ion-tab-button>
+            </ion-col>
+
+            <ion-col class="prontuario">
+              <ion-tab-button class="prontuario">
+                <ion-icon name="list-circle-outline"></ion-icon>      
+                <!-- <ion-label class="">Prontuário</ion-label> -->
+              </ion-tab-button>
+            </ion-col>
+      
+            <ion-col class="perfil">
+              <ion-tab-button class="icons">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <!-- <ion-label class="people">Perfil</ion-label> -->
+              </ion-tab-button> 
+            </ion-col>
+      
+            <ion-col class="pagamento">
+              <ion-tab-button class="icons">
+                <ion-icon name="wallet-outline"></ion-icon>     
+                <!-- <ion-label class="pay">Pagamentos</ion-label> -->
+              </ion-tab-button> 
+            </ion-col>
+
+          </ion-row>
+        </ion-grid>
+      </ion-buttons> 
+    </ion-toolbar> 
+</ion-footer>
