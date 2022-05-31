@@ -16,11 +16,56 @@ ion-footer {
     border-top: 2px solid rgb(108, 169, 101) !important;
 } 
 
-.people, .pay, .labelMenu, .agenda {
+.prontuario {
+    border-left: none;
+    border-right: none;
+    width: 25%;
+}
+  
+.agenda {
+    color: red !important;
+    font-weight: bold;
+    border-left: none;
+    border-right: none;
+    width: 25%;
+}
+  
+.perfil {
+    border-left: none;
+    border-right: none;
+    width: 25%;
+}
+  
+.pagamento {
+    border-left: none;
+    border-right: none;
+    width: 25%;
+}
+
+ion-icon {
+    font-size: 32px;
+}
+  
+ion-buttons {
+    // background-color: red;
+    height: 13%;
+    border: none;
+}
+  
+ion-badge {
+    background-color: blue;
+    size: 32px;
+}
+
+.icons {
     color: rgb(108, 169, 101) !important;
 }
 
-.home {
-    --background-color: rgb(108, 169, 101) !important;
-    border-radius: 10px;
+.item-has-focus {
+    --highlight-color-focused: white;
+}
+
+.title {
+    font-size: 12px !important;
+    font-weight: bold;
 }

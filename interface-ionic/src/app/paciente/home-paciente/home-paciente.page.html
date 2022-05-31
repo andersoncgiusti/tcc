@@ -1,46 +1,75 @@
 <ion-header>
   <ion-toolbar class="header">
-    <ion-title>Home</ion-title>
+    <ion-title>Agenda</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-title class="mt-3 mb-3">Olá, Luiz!</ion-title>
+  <ion-card-title class="text-center mt-3">Realize seu agendamento</ion-card-title>
+  <div class="cadastro">
+    <ion-icon class="btn person mt-3" name="person-add-outline" (click)="agenda()" *ngIf="agendamento"></ion-icon>
+    <ion-icon name="close-outline"  class="btn person mt-3" (click)="close()" *ngIf="toDisplayAgendamento"></ion-icon>
+  </div>
+
+  <ion-card *ngIf="toDisplayAgendamento">
+    <div class="container">
+      <!-- <ion-datetime 
+        (ionChange)="calcAge()"
+        [(ngModel)]="selectedDate"
+        placeholder="Pick date"
+        [max]="today">
+      </ion-datetime> -->
+      
+      <ion-item class="text-center">
+        <ion-label>Selecione o horário</ion-label>
+        <ion-input type="date" placeholder="Digite o estado"></ion-input>
+        <ion-input type="time"></ion-input>
+      </ion-item>
+    </div>
+  </ion-card>
+
+  <div class="text-center mt-4">
+    <ion-label>Seus agendamentos</ion-label>
+  </div>
+  <div class="text-center mt-4 title">
+    <ion-label class="mt-4">Nenhum agendamento feito</ion-label>    
+  </div>
 
 </ion-content>
 
 <ion-footer> 
   <ion-toolbar>      
-      <ion-buttons class="text-center">
+      <ion-buttons class="text-center icons">
         <ion-grid class="grid">
-          <ion-row>
-            
-            <ion-col class="home btn-success">
-              <ion-tab-button class="">
-                <ion-icon class="" name="home-outline"></ion-icon>      
-                <ion-label class="">Home</ion-label>
-              </ion-tab-button>
-            </ion-col>
-      
+          <ion-row>        
+                  
             <ion-col class="agenda">
               <ion-tab-button class="agenda">
                 <ion-icon name="calendar-outline"></ion-icon>
-                <ion-label class="calendar">Agenda</ion-label>
-                <ion-badge>6</ion-badge>
+                <!-- <ion-label class="calendar">Agenda</ion-label> -->
+                <!-- <ion-badge>6</ion-badge> -->
+              </ion-tab-button>
+            </ion-col>
+
+            <ion-col class="prontuario">
+              <ion-tab-button class="icons">
+                <ion-icon name="list-circle-outline"></ion-icon>      
+                <!-- <ion-label class="">Prontuário</ion-label> -->
               </ion-tab-button>
             </ion-col>
       
             <ion-col class="perfil">
-              <ion-tab-button class="perfil">
-                <ion-icon class="labelMenu" name="people-outline"></ion-icon>
-                <ion-label class="people">Perfil</ion-label>
+              <ion-tab-button class="icons">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <!-- <ion-label class="people">Perfil</ion-label> -->
               </ion-tab-button> 
             </ion-col>
       
             <ion-col class="pagamento">
-              <ion-tab-button class="pagamento">
-                <ion-icon class="labelMenu" name="wallet-outline"></ion-icon>     
-                <ion-label class="pay">Pagamentos</ion-label>
+              <ion-tab-button class="icons">
+                <ion-icon name="wallet-outline"></ion-icon>     
+                <!-- <ion-label class="pay">Pagamentos</ion-label> -->
               </ion-tab-button> 
             </ion-col>
 

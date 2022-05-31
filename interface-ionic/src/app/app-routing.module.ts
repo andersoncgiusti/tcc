@@ -31,6 +31,10 @@ const routes: Routes = [
   },  {
     path: 'home-paciente',
     loadChildren: () => import('./paciente/home-paciente/home-paciente.module').then( m => m.HomePacientePageModule)
+  },
+  {
+    path: 'prontuario',
+    loadChildren: () => import('./paciente/prontuario/prontuario.module').then( m => m.ProntuarioPageModule)
   }
 
 ];
