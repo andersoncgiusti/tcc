@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home-paciente',
@@ -11,11 +12,19 @@ export class HomePacientePage implements OnInit {
   age = 0;
 
 
-  constructor() { 
+  constructor(private navCtrl: NavController) { 
     this.today = new Date().toISOString();
   }
 
   ngOnInit() {
+  }
+
+  openHome() {
+    this.navCtrl.navigateRoot('home-paciente');
+  }
+
+  openProntuario() {
+    this.navCtrl.navigateRoot('prontuario');
   }
 
   calcAge() {

@@ -45,14 +45,14 @@
           <ion-row>        
                   
             <ion-col class="agenda">
-              <ion-tab-button class="agenda">
+              <ion-tab-button class="agenda" (click)="openHome()">
                 <ion-icon name="calendar-outline"></ion-icon>
                 <!-- <ion-label class="calendar">Agenda</ion-label> -->
                 <!-- <ion-badge>6</ion-badge> -->
               </ion-tab-button>
             </ion-col>
 
-            <ion-col class="prontuario">
+            <ion-col class="prontuario" (click)="openProntuario()">
               <ion-tab-button class="icons">
                 <ion-icon name="list-circle-outline"></ion-icon>      
                 <!-- <ion-label class="">Prontuário</ion-label> -->

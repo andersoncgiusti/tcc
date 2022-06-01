@@ -21,7 +21,7 @@
           <ion-row>        
                   
             <ion-col class="agenda">
-              <ion-tab-button class="icons">
+              <ion-tab-button class="icons" (click)="openHome()">
                 <ion-icon name="calendar-outline"></ion-icon>
                 <!-- <ion-label class="calendar">Agenda</ion-label> -->
                 <!-- <ion-badge>6</ion-badge> -->
@@ -29,7 +29,7 @@
             </ion-col>
 
             <ion-col class="prontuario">
-              <ion-tab-button class="prontuario">
+              <ion-tab-button class="prontuario" (click)="openProntuario()">
                 <ion-icon name="list-circle-outline"></ion-icon>      
                 <!-- <ion-label class="">Prontuário</ion-label> -->
               </ion-tab-button>
