@@ -35,8 +35,7 @@ module.exports = {
             res.status(400).json({ message: error.message })
         }  
     },
-    prontuarioPatchId: async (req, res, next) => {  
-
+    prontuarioPatchId: async (req, res, next) => { 
         try {
             const updateProntuario = await Prontuario.findByIdAndUpdate(req.params.id, {
                 treatment: req.body.treatment

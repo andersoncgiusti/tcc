@@ -1,0 +1,43 @@
+### status
+GET http://localhost:3000/api/status
+###
+### paciente getAll
+GET http://localhost:3000/api/paciente
+###
+### paciente getOne
+GET http://localhost:3000/api/paciente/629ce2ccc30052fd1c1f40b2
+###
+### paciente post
+POST http://localhost:3000/api/paciente 
+Content-Type: application/json
+
+{
+    "patientName": "Anderson Carvalho Giusti",
+    "patientAge": 32,
+    "patientCpf": 37593539830,
+    "patientAddress": "Avenida Odair Santanelli",
+    "patientNumber": 990,
+    "patientComplement": "Bloco 15 Apto B14",
+    "patientCity": "Guarulhos",
+    "patientState": "SP"
+}
+
+###
+### paciente patch
+PATCH http://localhost:3000/api/paciente/629ce2ccc30052fd1c1f40b2
+Content-Type: application/json
+
+{
+    "patientName": "Anderson Carvalho Giusti",
+    "patientAge": 32,
+    "patientCpf": 37593539830,
+    "patientAddress": "Avenida Odair Santanelli",
+    "patientNumber": 990,
+    "patientComplement": "Bloco 15 Apto B14",
+    "patientCity": "Pq Cecap - Guarulhos",
+    "patientState": "SP"
+}
+###
+### paciente delete
+DELETE http://localhost:3000/api/paciente/629ce2ccc30052fd1c1f40b2
+###

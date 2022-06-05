@@ -5,6 +5,7 @@ const app = express()
 const statusRouter = require('./routes/status.router')
 const agendaRouter = require('./routes/agenda.router')
 const prontuarioRouter = require('./routes/prontuario.router')
+const pacienteRouter = require('./routes/paciente.router')
 
 app.use(express.urlencoded({ extended: false })) 
 app.use(express.json()) 
@@ -25,5 +26,6 @@ app.use((req, res, next) => {
 app.use(statusRouter)
 app.use(agendaRouter)
 app.use(prontuarioRouter)
+app.use(pacienteRouter)
 
 module.exports = app
