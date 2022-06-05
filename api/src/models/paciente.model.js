@@ -33,7 +33,7 @@ const pacienteSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    treatmentDate: {
+    patientDate: {
         type: Date,
         required: true,
         default: Date.now

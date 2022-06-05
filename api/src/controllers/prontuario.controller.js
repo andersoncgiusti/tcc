@@ -2,7 +2,6 @@ const Prontuario = require('../models/prontuario.model')
 const ObjectID = require('mongodb').ObjectID
 
 module.exports = { 
-
     prontuarioGet: async (req, res) => {  
         try {
             const prontuarios = await Prontuario.find()

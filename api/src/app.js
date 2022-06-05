@@ -3,7 +3,7 @@ const app = express()
 
 //imports routes
 const statusRouter = require('./routes/status.router')
-const agendaRouter = require('./routes/agenda.router')
+const agendamentoRouter = require('./routes/agendamento.router')
 const prontuarioRouter = require('./routes/prontuario.router')
 const pacienteRouter = require('./routes/paciente.router')
 
@@ -23,8 +23,8 @@ app.use((req, res, next) => {
     next()
 })
 
+app.use(agendamentoRouter)
 app.use(statusRouter)
-app.use(agendaRouter)
 app.use(prontuarioRouter)
 app.use(pacienteRouter)
 
