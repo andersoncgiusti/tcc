@@ -1,0 +1,29 @@
+### status
+GET http://localhost:3000/api/status
+###
+### prontuario getAll
+GET http://localhost:3000/api/prontuario
+###
+### prontuario getOne
+GET http://localhost:3000/api/prontuario/629b64316d0cf5ce38703991
+###
+### prontuario post
+POST http://localhost:3000/api/prontuario 
+Content-Type: application/json
+
+{
+    "treatment": "Fim do tratamento paciente 100"
+}
+
+###
+### prontuario patch
+PATCH http://localhost:3000/api/prontuario/629b9a5df6c90ef6c0174659
+Content-Type: application/json
+
+{
+    "treatment": "Fim do tratamento pacienteeeeeeeeee 100000000000000000000000 PATCHHHHHHHH "
+}
+###
+### prontuario delete
+DELETE http://localhost:3000/api/prontuario/629cce8a102a0cb3a2c2d7c8
+###
