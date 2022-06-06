@@ -1,0 +1,43 @@
+### status
+GET http://localhost:3000/api/status
+###
+### fisioterapeuta getAll
+GET http://localhost:3000/api/fisioterapeuta
+###
+### fisioterapeuta getOne
+GET http://localhost:3000/api/fisioterapeuta/629e268f1bbbd38a6421c2a9
+###
+### fisioterapeuta post
+POST http://localhost:3000/api/fisioterapeuta 
+Content-Type: application/json
+
+{
+    "physiotherapistName": "Anderson Carvalho Giusti",
+    "physiotherapistAge": 32,
+    "physiotherapistCpf": 37593539830,
+    "physiotherapistAddress": "Avenida Odair Santanelli",
+    "physiotherapistNumber": 990,
+    "physiotherapistComplement": "Bloco 15 Apto B14",
+    "physiotherapistCity": "Guarulhos",
+    "physiotherapistState": "SP"
+}
+
+###
+### fisioterapeuta patch
+PATCH http://localhost:3000/api/fisioterapeuta/:id
+Content-Type: application/json
+
+{
+    "physiotherapistName": "Anderson Carvalho Giusti",
+    "physiotherapistAge": 32,
+    "physiotherapistCpf": 37593539830,
+    "physiotherapistAddress": "Avenida Odair Santanelli",
+    "physiotherapistNumber": 990,
+    "patientComplement": "Bloco 15 Apto B14",
+    "physiotherapistComplement": "Pq Cecap - Guarulhos",
+    "physiotherapistState": "SP"
+}
+###
+### fisioterapeuta delete
+DELETE http://localhost:3000/api/fisioterapeuta/:id
+###

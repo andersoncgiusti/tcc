@@ -6,6 +6,7 @@ const statusRouter = require('./routes/status.router')
 const agendamentoRouter = require('./routes/agendamento.router')
 const prontuarioRouter = require('./routes/prontuario.router')
 const pacienteRouter = require('./routes/paciente.router')
+const fisioterapeutaRouter = require('./routes/fisioterapeuta.router')
 
 app.use(express.urlencoded({ extended: false })) 
 app.use(express.json()) 
@@ -27,5 +28,6 @@ app.use(agendamentoRouter)
 app.use(statusRouter)
 app.use(prontuarioRouter)
 app.use(pacienteRouter)
+app.use(fisioterapeutaRouter)
 
 module.exports = app
