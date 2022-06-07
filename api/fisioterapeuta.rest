@@ -24,7 +24,7 @@ Content-Type: application/json
 
 ###
 ### fisioterapeuta patch
-PATCH http://localhost:3000/api/fisioterapeuta/:id
+PATCH http://localhost:3000/api/fisioterapeuta/629e268f1bbbd38a6421c2a9
 Content-Type: application/json
 
 {
@@ -39,5 +39,5 @@ Content-Type: application/json
 }
 ###
 ### fisioterapeuta delete
-DELETE http://localhost:3000/api/fisioterapeuta/:id
+DELETE http://localhost:3000/api/fisioterapeuta/629e268f1bbbd38a6421c2a9
 ###
