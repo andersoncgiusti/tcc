@@ -5,25 +5,25 @@ GET http://localhost:3000/api/status
 GET http://localhost:3000/api/prontuario
 ###
 ### prontuario getOne
-GET http://localhost:3000/api/prontuario/629b64316d0cf5ce38703991
+GET http://localhost:3000/api/prontuario/629b9a5cf6c90ef6c0174655
 ###
 ### prontuario post
 POST http://localhost:3000/api/prontuario 
 Content-Type: application/json
 
 {
-    "treatment": "Fim do tratamento paciente 100"
+    "treatment": "Fim do tratamento paciente wwwwwwwwwwwwwww"
 }
 
 ###
 ### prontuario patch
-PATCH http://localhost:3000/api/prontuario/629b9a5df6c90ef6c0174659
+PATCH http://localhost:3000/api/prontuario/629b9a5cf6c90ef6c0174655
 Content-Type: application/json
 
 {
-    "treatment": "Fim do tratamento pacienteeeeeeeeee 100000000000000000000000 PATCHHHHHHHH "
+    "treatment": "alteradooooooooooooooooooooooooooooooooo "
 }
 ###
 ### prontuario delete
-DELETE http://localhost:3000/api/prontuario/629cce8a102a0cb3a2c2d7c8
+DELETE http://localhost:3000/api/prontuario/629b9a5cf6c90ef6c0174655
 ###

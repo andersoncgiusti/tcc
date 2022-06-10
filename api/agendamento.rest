@@ -5,7 +5,7 @@ GET http://localhost:3000/api/status
 GET  http://localhost:3000/api/agendamento 
 ###
 ### agendamento getOne
-GET  http://localhost:3000/api/agendamento/629d039a87800cb12c8c81f0
+GET  http://localhost:3000/api/agendamento/629e97fc81f5813186d60242
 ###
 ### agendamento post
 POST http://localhost:3000/api/agendamento 
@@ -18,15 +18,15 @@ Content-Type: application/json
 }
 ###
 ### agendamento patch
-PATCH http://localhost:3000/api/agendamento/629d039a87800cb12c8c81f0
+PATCH http://localhost:3000/api/agendamento/629e97fc81f5813186d60242
 Content-Type: application/json
 
 {
     "scheduleDatetreatment": "2022-05-30",
-    "scheduleTime": "16:00:00",
+    "scheduleTime": "20:00:00",
     "scheduleSession": 32
 }
 ###
 ### agendamento delete
-DELETE http://localhost:3000/api/agendamento/629d039a87800cb12c8c81f0
+DELETE http://localhost:3000/api/agendamento/629e97fc81f5813186d60242
 ###

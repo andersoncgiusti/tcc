@@ -5,7 +5,7 @@ GET http://localhost:3000/api/status
 GET http://localhost:3000/api/fisioterapeuta
 ###
 ### fisioterapeuta getOne
-GET http://localhost:3000/api/fisioterapeuta/629e268f1bbbd38a6421c2a9
+GET http://localhost:3000/api/fisioterapeuta/629e96c9be638658a42f752b
 ###
 ### fisioterapeuta post
 POST http://localhost:3000/api/fisioterapeuta 
@@ -24,7 +24,7 @@ Content-Type: application/json
 
 ###
 ### fisioterapeuta patch
-PATCH http://localhost:3000/api/fisioterapeuta/629e268f1bbbd38a6421c2a9
+PATCH http://localhost:3000/api/fisioterapeuta/629e96c9be638658a42f752b
 Content-Type: application/json
 
 {
@@ -34,10 +34,10 @@ Content-Type: application/json
     "physiotherapistAddress": "Avenida Odair Santanelli",
     "physiotherapistNumber": 990,
     "patientComplement": "Bloco 15 Apto B14",
-    "physiotherapistComplement": "Pq Cecap - Guarulhos",
+    "physiotherapistComplement": "hauiahiauhaiuahi",
     "physiotherapistState": "SP"
 }
 ###
 ### fisioterapeuta delete
-DELETE http://localhost:3000/api/fisioterapeuta/629e268f1bbbd38a6421c2a9
+DELETE http://localhost:3000/api/fisioterapeuta/629e96c9be638658a42f752b
 ###
