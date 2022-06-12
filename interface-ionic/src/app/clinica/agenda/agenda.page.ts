@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
-
+import { AgendaService } from '../services/agenda.service'
+import { AgendaModel } from '../models/agenda.model'
 
 @Component({
   selector: 'app-agenda',
@@ -15,12 +16,31 @@ export class AgendaPage implements OnInit {
   formattedString = '';
   horarioAgendado = '';
 
-  constructor(private navCtrl: NavController) 
+  constructor(
+    private navCtrl: NavController,
+    private AgendaService: AgendaService
+    ) 
   {
     // this.setToday();
   }
 
+  agendamento: AgendaModel = new AgendaModel();
+  agendamentos: Array<any> = new Array();
+
+  agendamentoGet: any;
+
   ngOnInit() {
+    this.viewCalendar();    
+  }
+
+  viewCalendar() {
+    this.AgendaService.agendamentoGet()
+      .subscribe(agendamentoGet => { 
+        this.agendamentoGet = agendamentoGet;
+        console.log('>>>>>>>>', this.agendamentoGet);
+      }, err => {
+        console.log('Error viewCalendar', err);      
+      });
   }
 
   openHome() {
@@ -60,7 +80,4 @@ export class AgendaPage implements OnInit {
     this.calendar = !this.calendar; 
     this.displayCalendar = !this.displayCalendar; 
   }
-
-  
-
 }
