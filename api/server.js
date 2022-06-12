@@ -1,18 +1,10 @@
 require('dotenv').config()
 const http = require('http')
 const app = require('./src/app')
-// const database = require('./src/models/db')
 const mongoose = require('mongoose')
 
 const port = 3000
 const server = http.createServer(app)
-
-//conection with database MySQL
-// database.authenticate().then(() => {
-//     console.log("Successfully connected to database MySQL")
-// }).catch(err => {
-//     console.log(err)
-// })
 
 //conection with database MongoDb
 const options = { useNewUrlParser: true, useUnifiedTopology: true }

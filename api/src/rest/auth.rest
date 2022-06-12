@@ -1,11 +1,25 @@
-###
+### register
 POST http://localhost:3000/api/register
 Content-Type: application/json
 
 {
     "userName": "Luizinho",
-    "userEmail": "luizinho@hotmail.com",
+    "userEmail": "luiz.pedro5@hotmail.com",
     "userPassword": "123456"
 }
 
+###
+### authenticate
+POST http://localhost:3000/api/authenticate
+Content-Type: application/json
+
+{
+    "userEmail": "luiz.pedro5@hotmail.com",
+    "userPassword": "123456"
+}
+
+###
+### get
+GET http://localhost:3000/api/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTY1NDRhNjU0YTkzYzBjMDljZjE0OCIsImlhdCI6MTY1NTA3MDEyNiwiZXhwIjoxNjU1MTU2NTI2fQ.AOcIegpKdHyHZWTLNS7RIpyNpCw8wccZpklJT1ZfETM
 ###

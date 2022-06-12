@@ -1,5 +1,6 @@
 ### status
 GET http://localhost:3000/api/status
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTY1NDRhNjU0YTkzYzBjMDljZjE0OCIsImlhdCI6MTY1NTA3MDEyNiwiZXhwIjoxNjU1MTU2NTI2fQ.AOcIegpKdHyHZWTLNS7RIpyNpCw8wccZpklJT1ZfETM
 ###
 ### agendamento getAll
 GET  http://localhost:3000/api/agendamento 
