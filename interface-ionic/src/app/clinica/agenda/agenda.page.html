@@ -29,7 +29,8 @@
         <ion-col>Horário</ion-col>
         <ion-col>Sessão Qtd.</ion-col>
         <ion-col size="4">Paciente</ion-col>
-        <ion-col>Ver</ion-col>
+        <ion-col size="1"></ion-col>
+        <ion-col size="1"></ion-col>
       </ion-row>
     </ion-grid>
     <ion-card class="text-center title-agenda">
@@ -37,10 +38,11 @@
       <ion-grid *ngFor="let item of agendamentoGet">
         <div>
           <ion-row>
-            <ion-col>{{ item.scheduleTime }}</ion-col>
-            <ion-col>{{ item.scheduleSession }}</ion-col>
-            <ion-col size="4">{{ item.userName.userName }}</ion-col>
-            <ion-col><ion-icon  class="eye" name="eye-outline" (click)="openCadatros(item.id)"></ion-icon></ion-col>
+            <ion-input size="1" value="{{ item.scheduleTime }}"></ion-input>
+            <ion-input size="1" value="{{ item.scheduleSession }}"></ion-input>
+            <ion-input size="4" value="{{ item.userName.userName }}"></ion-input>
+            <ion-col size="1"><ion-icon  class="eye" name="pencil-outline" (click)="update(item._id)"></ion-icon></ion-col>
+            <ion-col size="1"><ion-icon  class="eye" name="trash-outline" (click)="delete(item._id)"></ion-icon></ion-col>
           </ion-row>
         </div>     
       </ion-grid>
