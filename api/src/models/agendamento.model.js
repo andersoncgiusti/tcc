@@ -13,6 +13,11 @@ const agendamentoSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
+    userName: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User',
+        require: true
+    },
     scheduleDate: {
         type: Date,
         required: true,

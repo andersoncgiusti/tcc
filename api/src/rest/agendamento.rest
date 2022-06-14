@@ -1,15 +1,20 @@
 ### status
 GET http://localhost:3000/api/status
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTY1NDRhNjU0YTkzYzBjMDljZjE0OCIsImlhdCI6MTY1NTA3MDEyNiwiZXhwIjoxNjU1MTU2NTI2fQ.AOcIegpKdHyHZWTLNS7RIpyNpCw8wccZpklJT1ZfETM
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTgwZmM0NzRjM2RkZjNjMGRkYmE1ZSIsImlhdCI6MTY1NTE4MTI5MSwiZXhwIjoxNjU1MjY3NjkxfQ.dHNep_5nuBEnj9pO1bSC2TwTD9W7jkMeVkw5Zcnt_zE
 ###
 ### agendamento getAll
 GET  http://localhost:3000/api/agendamento 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTgwZmM0NzRjM2RkZjNjMGRkYmE1ZSIsImlhdCI6MTY1NTE4MTI5MSwiZXhwIjoxNjU1MjY3NjkxfQ.dHNep_5nuBEnj9pO1bSC2TwTD9W7jkMeVkw5Zcnt_zE
+
 ###
 ### agendamento getOne
-GET  http://localhost:3000/api/agendamento/629e97fc81f5813186d60242
+GET  http://localhost:3000/api/agendamento/62a817e5b291fa518f9542e6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTgwZmM0NzRjM2RkZjNjMGRkYmE1ZSIsImlhdCI6MTY1NTE4MTI5MSwiZXhwIjoxNjU1MjY3NjkxfQ.dHNep_5nuBEnj9pO1bSC2TwTD9W7jkMeVkw5Zcnt_zE
+
 ###
 ### agendamento post
 POST http://localhost:3000/api/agendamento 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTgwZmM0NzRjM2RkZjNjMGRkYmE1ZSIsImlhdCI6MTY1NTE4MTI5MSwiZXhwIjoxNjU1MjY3NjkxfQ.dHNep_5nuBEnj9pO1bSC2TwTD9W7jkMeVkw5Zcnt_zE
 Content-Type: application/json
 
 {
@@ -19,15 +24,17 @@ Content-Type: application/json
 }
 ###
 ### agendamento patch
-PATCH http://localhost:3000/api/agendamento/629d02b899300c5e20763906
+PATCH http://localhost:3000/api/agendamento/62a817e5b291fa518f9542e6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTgwZmM0NzRjM2RkZjNjMGRkYmE1ZSIsImlhdCI6MTY1NTE4MTI5MSwiZXhwIjoxNjU1MjY3NjkxfQ.dHNep_5nuBEnj9pO1bSC2TwTD9W7jkMeVkw5Zcnt_zE
 Content-Type: application/json
 
 {
     "scheduleDatetreatment": "2022-05-30",
-    "scheduleTime": "20:00:00",
-    "scheduleSession": 2
+    "scheduleTime": "10:00:00",
+    "scheduleSession": 1
 }
 ###
 ### agendamento delete
-DELETE http://localhost:3000/api/agendamento/629e97fc81f5813186d60242
+DELETE http://localhost:3000/api/agendamento/62a817deb291fa518f9542e4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTgwZmM0NzRjM2RkZjNjMGRkYmE1ZSIsImlhdCI6MTY1NTE4MTI5MSwiZXhwIjoxNjU1MjY3NjkxfQ.dHNep_5nuBEnj9pO1bSC2TwTD9W7jkMeVkw5Zcnt_zE
 ###

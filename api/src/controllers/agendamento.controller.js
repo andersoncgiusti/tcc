@@ -4,7 +4,7 @@ const ObjectID = require('mongodb').ObjectID
 module.exports = { 
     agendamentoGet: async (req, res) => {  
         try {
-            const agendamentos = await Agendamento.find()
+            const agendamentos = await Agendamento.find().populate('userName')
             res.json(agendamentos)
         } catch (error) {
             res.status(500).json({ message: error.message })
@@ -12,7 +12,7 @@ module.exports = {
     },
     agendamentoGetId: async (req, res, next) => {
         try {
-            const agendamento = await Agendamento.findById(req.params.id)
+            const agendamento = await Agendamento.findById(req.params.id).populate('userName')
             res.json(agendamento)
             if (agendamento == null) {
                 return res.status(404).json({ message: 'Agenda not found!' })
@@ -22,15 +22,9 @@ module.exports = {
         }  
         next()        
     },
-    agendamentoPost: async (req, res) => {  
-        const agendamento = new Agendamento({
-            scheduleDatetreatment: req.body.scheduleDatetreatment,
-            scheduleTime: req.body.scheduleTime,
-            scheduleSession: req.body.scheduleSession
-        })
-
+    agendamentoPost: async (req, res) => {          
         try {
-            const newAgendamento = await agendamento.save()
+            const newAgendamento = await Agendamento.create({...req.body, userName: req.userId})
             res.status(201).json(newAgendamento)
         } catch (error) {
             res.status(400).json({ message: error.message })
@@ -42,7 +36,7 @@ module.exports = {
                 scheduleDatetreatment: req.body.scheduleDatetreatment,
                 scheduleTime: req.body.scheduleTime,
                 scheduleSession: req.body.scheduleSession
-            })
+            }, { new: true })
             res.status(200).json({ message: 'Agendamento was updated' })
         } catch (error) {
             res.status(400).json({ message: error.message })

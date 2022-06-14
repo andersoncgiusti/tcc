@@ -4,7 +4,7 @@ Content-Type: application/json
 
 {
     "userName": "Anderson",
-    "userEmail": "anderson4@hotmail.com",
+    "userEmail": "anderson@hotmail.com",
     "userPassword": "123456"
 }
 ###
@@ -13,7 +13,7 @@ POST http://localhost:3000/api/authenticate
 Content-Type: application/json
 
 {
-    "userEmail": "luiz.pedro5@hotmail.com",
+    "userEmail": "anderson@hotmail.com",
     "userPassword": "123456"
 }
 ###
@@ -34,7 +34,7 @@ POST http://localhost:3000/api/reset_password
 Content-Type: application/json
 
 {
-    "userEmail": "aaanderson_cg12333@hotmail.com",
+    "userEmail": "anderson_cg12@hotmail.com",
     "token": "aaaa69b6e6cad9a72cc1a135ba61e6965c8ba7f29d1a",
     "userPassword": "123456"
 }
