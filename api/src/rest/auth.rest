@@ -3,11 +3,10 @@ POST http://localhost:3000/api/register
 Content-Type: application/json
 
 {
-    "userName": "Luizinho",
-    "userEmail": "luiz.pedro5@hotmail.com",
+    "userName": "Anderson",
+    "userEmail": "anderson4@hotmail.com",
     "userPassword": "123456"
 }
-
 ###
 ### authenticate
 POST http://localhost:3000/api/authenticate
@@ -17,9 +16,26 @@ Content-Type: application/json
     "userEmail": "luiz.pedro5@hotmail.com",
     "userPassword": "123456"
 }
-
 ###
 ### get
 GET http://localhost:3000/api/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTY1NDRhNjU0YTkzYzBjMDljZjE0OCIsImlhdCI6MTY1NTA3MDEyNiwiZXhwIjoxNjU1MTU2NTI2fQ.AOcIegpKdHyHZWTLNS7RIpyNpCw8wccZpklJT1ZfETM
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTY1NDRhNjU0YTkzYzBjMDljZjE0OCIsImlhdCI6MTY1NTA3MDEyNiwiZXhwIjoxNjU1MTU2NTI2fQ.AOcIegpKdHyHZWTLNS7RIpyNpCw8wccZpklJT1ZfETM
+###
+### new passwpord
+POST http://localhost:3000/api/forgot_password
+Content-Type: application/json
+
+{
+    "userEmail": "anderson_cg12@hotmail.com"
+}
+###
+### reset password
+POST http://localhost:3000/api/reset_password
+Content-Type: application/json
+
+{
+    "userEmail": "aaanderson_cg12333@hotmail.com",
+    "token": "aaaa69b6e6cad9a72cc1a135ba61e6965c8ba7f29d1a",
+    "userPassword": "123456"
+}
 ###

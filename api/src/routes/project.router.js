@@ -4,7 +4,7 @@ const authMiddleware = require('../middlewares/auth')
 
 const prjectController = require('../controllers/project.controller')
 
-router.use(authMiddleware)
+// router.use(authMiddleware)
 
 router.get('/api/', prjectController.project)
 

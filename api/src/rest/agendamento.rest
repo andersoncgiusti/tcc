@@ -15,17 +15,17 @@ Content-Type: application/json
 {
     "scheduleDatetreatment": "2022-05-06",
     "scheduleTime": "13:00:00",
-    "scheduleSession": 32
+    "scheduleSession": 2
 }
 ###
 ### agendamento patch
-PATCH http://localhost:3000/api/agendamento/629e97fc81f5813186d60242
+PATCH http://localhost:3000/api/agendamento/629d02b899300c5e20763906
 Content-Type: application/json
 
 {
     "scheduleDatetreatment": "2022-05-30",
     "scheduleTime": "20:00:00",
-    "scheduleSession": 32
+    "scheduleSession": 2
 }
 ###
 ### agendamento delete
