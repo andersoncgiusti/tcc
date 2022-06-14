@@ -35,12 +35,12 @@ export class AgendaPage implements OnInit {
 
   viewCalendar() {
     this.AgendaService.agendamentoGet()
-      .subscribe(agendamentoGet => { 
-        this.agendamentoGet = agendamentoGet;
-        console.log('>>>>>>>>', this.agendamentoGet);
-      }, err => {
-        console.log('Error viewCalendar', err);      
-      });
+    .subscribe(agendamentoGet => { 
+      this.agendamentoGet = agendamentoGet;
+      console.log('>>>>>>>>', this.agendamentoGet);
+    }, err => {
+      console.log('Error viewCalendar', err);      
+    });
   }
 
   openHome() {

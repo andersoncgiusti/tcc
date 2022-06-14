@@ -39,7 +39,7 @@
           <ion-row>
             <ion-col>{{ item.scheduleTime }}</ion-col>
             <ion-col>{{ item.scheduleSession }}</ion-col>
-            <ion-col size="4">Luiz Brabo</ion-col>
+            <ion-col size="4">{{ item.userName.userName }}</ion-col>
             <ion-col><ion-icon  class="eye" name="eye-outline" (click)="openCadatros(item.id)"></ion-icon></ion-col>
           </ion-row>
         </div>     
