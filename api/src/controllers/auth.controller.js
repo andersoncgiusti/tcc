@@ -23,13 +23,18 @@ module.exports = {
             }
                 
             const user = await User.create(req.body)
-
+            console.log(user);
             user.userPassword = undefined
             
             return res.send({ 
                 user,
                 token: generateToken({ id: user.id })
             })
+
+            // const token = jwt.sign({ userEmail: user.userEmail, userId: user._id }, authConfig.secret, { expiresIn: "1h"})
+            // res.status(200).json({
+            //     token: token
+            // });
         } catch (error) {
             res.status(400).json({ message: error.message })
         }  
@@ -38,7 +43,7 @@ module.exports = {
         const { userEmail, userPassword } = req.body
 
         const user = await User.findOne({ userEmail }).select('+userPassword')
-
+        console.log(user);
         if (!user) {
             return res.status(400).send({ message: 'User not found' })
         }
@@ -53,6 +58,15 @@ module.exports = {
             user,
             token: generateToken({ id: user.id })
         })
+
+        // const token = jwt.sign({ userEmail: user.userEmail, id: user.id }, authConfig.secret, { expiresIn: "1h"})
+        // res.status(200).json({
+        //     token: token
+        // });
+        // console.log(token);
+    },
+    signup: async (req, res, next) => {
+
     },
     forgot: async (req, res) => {
         const { userEmail } = req.body;

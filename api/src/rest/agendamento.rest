@@ -1,20 +1,20 @@
 ### status
 GET http://localhost:3000/api/status
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTgwZmM0NzRjM2RkZjNjMGRkYmE1ZSIsImlhdCI6MTY1NTE4MTI5MSwiZXhwIjoxNjU1MjY3NjkxfQ.dHNep_5nuBEnj9pO1bSC2TwTD9W7jkMeVkw5Zcnt_zE
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTgwZmM0NzRjM2RkZjNjMGRkYmE1ZSIsImlhdCI6MTY1NTE4MTI5MSwiZXhwIjoxNjU1MjY3NjkxfQ.dHNep_5nuBEnj9pO1bSC2TwTD9W7jkMeVkw5Zcnt_zE
 ###
 ### agendamento getAll
 GET  http://localhost:3000/api/agendamento 
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTgwZmM0NzRjM2RkZjNjMGRkYmE1ZSIsImlhdCI6MTY1NTE4MTI5MSwiZXhwIjoxNjU1MjY3NjkxfQ.dHNep_5nuBEnj9pO1bSC2TwTD9W7jkMeVkw5Zcnt_zE
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTgwZmM0NzRjM2RkZjNjMGRkYmE1ZSIsImlhdCI6MTY1NTE4MTI5MSwiZXhwIjoxNjU1MjY3NjkxfQ.dHNep_5nuBEnj9pO1bSC2TwTD9W7jkMeVkw5Zcnt_zE
 
 ###
 ### agendamento getOne
 GET  http://localhost:3000/api/agendamento/62a817e5b291fa518f9542e6
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTgwZmM0NzRjM2RkZjNjMGRkYmE1ZSIsImlhdCI6MTY1NTE4MTI5MSwiZXhwIjoxNjU1MjY3NjkxfQ.dHNep_5nuBEnj9pO1bSC2TwTD9W7jkMeVkw5Zcnt_zE
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTgwZmM0NzRjM2RkZjNjMGRkYmE1ZSIsImlhdCI6MTY1NTE4MTI5MSwiZXhwIjoxNjU1MjY3NjkxfQ.dHNep_5nuBEnj9pO1bSC2TwTD9W7jkMeVkw5Zcnt_zE
 
 ###
 ### agendamento post
 POST http://localhost:3000/api/agendamento 
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTgwZmM0NzRjM2RkZjNjMGRkYmE1ZSIsImlhdCI6MTY1NTE4MTI5MSwiZXhwIjoxNjU1MjY3NjkxfQ.dHNep_5nuBEnj9pO1bSC2TwTD9W7jkMeVkw5Zcnt_zE
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTgwZmM0NzRjM2RkZjNjMGRkYmE1ZSIsImlhdCI6MTY1NTE4MTI5MSwiZXhwIjoxNjU1MjY3NjkxfQ.dHNep_5nuBEnj9pO1bSC2TwTD9W7jkMeVkw5Zcnt_zE
 Content-Type: application/json
 
 {
@@ -25,16 +25,16 @@ Content-Type: application/json
 ###
 ### agendamento patch
 PATCH http://localhost:3000/api/agendamento/62a817e5b291fa518f9542e6
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTgwZmM0NzRjM2RkZjNjMGRkYmE1ZSIsImlhdCI6MTY1NTE4MTI5MSwiZXhwIjoxNjU1MjY3NjkxfQ.dHNep_5nuBEnj9pO1bSC2TwTD9W7jkMeVkw5Zcnt_zE
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTgwZmM0NzRjM2RkZjNjMGRkYmE1ZSIsImlhdCI6MTY1NTE4MTI5MSwiZXhwIjoxNjU1MjY3NjkxfQ.dHNep_5nuBEnj9pO1bSC2TwTD9W7jkMeVkw5Zcnt_zE
 Content-Type: application/json
 
 {
     "scheduleDatetreatment": "2022-05-30",
-    "scheduleTime": "10:00:00",
-    "scheduleSession": 1
+    "scheduleTime": "55:00:00",
+    "scheduleSession": 8
 }
 ###
 ### agendamento delete
-DELETE http://localhost:3000/api/agendamento/62a817deb291fa518f9542e4
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTgwZmM0NzRjM2RkZjNjMGRkYmE1ZSIsImlhdCI6MTY1NTE4MTI5MSwiZXhwIjoxNjU1MjY3NjkxfQ.dHNep_5nuBEnj9pO1bSC2TwTD9W7jkMeVkw5Zcnt_zE
+DELETE http://localhost:3000/api/agendamento/62a817e5b291fa518f9542e6
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTgwZmM0NzRjM2RkZjNjMGRkYmE1ZSIsImlhdCI6MTY1NTE4MTI5MSwiZXhwIjoxNjU1MjY3NjkxfQ.dHNep_5nuBEnj9pO1bSC2TwTD9W7jkMeVkw5Zcnt_zE
 ###

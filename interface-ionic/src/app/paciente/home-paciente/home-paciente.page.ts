@@ -48,4 +48,11 @@ export class HomePacientePage implements OnInit {
     this.toDisplayAgendamento = !this.toDisplayAgendamento; 
   }
 
+  horarioAgendado = '';
+
+  setToday(value) {
+    console.log(value); 
+    this.horarioAgendado = 'Data escolhida ' + value;   
+  }
+
 }

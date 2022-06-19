@@ -1,0 +1,24 @@
+<ion-content>
+  <ion-spinner name="bubbles" *ngIf="iSloading"></ion-spinner>  
+  <form (submit)="onLogin(loginForm)" #loginForm="ngForm" *ngIf="!iSloading"> 
+    <ion-grid>
+      <ion-row class="box">
+        <ion-col size-md="6" size-lg="5" size-xs="12">
+          <div class="text-center">
+            <h3>Realize o login</h3>
+          </div>
+          <div>
+            <ion-label class="errors" *ngIf="emailInput.invalid">Entre com o email valido</ion-label>
+            <ion-input name="email" ngModel type="email" placeholder="E-mail" #emailInput="ngModel" required email></ion-input>
+            <ion-label class="errors" *ngIf="passwordInput.invalid">Entre com a senha valida</ion-label>
+            <ion-input name="password" ngModel type="password" placeholder="Senha" #passwordInput="ngModel" required password></ion-input>
+          </div>
+          <ion-label class="forgot">Esqueceu sua senha?</ion-label>
+          <div>
+            <ion-button size="large" type="submit" expand="block">Acessar</ion-button> 
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>

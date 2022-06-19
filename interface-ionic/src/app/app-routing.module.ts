@@ -19,7 +19,7 @@ const routes: Routes = [
   
   {
     path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+    loadChildren: () => import('./auth/login/login.module').then( m => m.LoginPageModule)
   },
   {
     path: 'perfis',
@@ -28,14 +28,20 @@ const routes: Routes = [
   {
     path: 'pagamento',
     loadChildren: () => import('./clinica/pagamento/pagamento.module').then( m => m.PagamentoPageModule)
-  },  {
+  },
+  {
     path: 'home-paciente',
     loadChildren: () => import('./paciente/home-paciente/home-paciente.module').then( m => m.HomePacientePageModule)
   },
   {
     path: 'prontuario',
     loadChildren: () => import('./paciente/prontuario/prontuario.module').then( m => m.ProntuarioPageModule)
+  },
+  {
+    path: 'signup',
+    loadChildren: () => import('./auth/signup/signup.module').then( m => m.SignupPageModule)
   }
+
 
 ];
 

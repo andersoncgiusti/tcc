@@ -5,6 +5,7 @@ const authController = require('../controllers/auth.controller')
 
 router.post('/api/register', authController.register)
 router.post('/api/authenticate', authController.authenticate)
+router.post('/api/signup', authController.signup)
 router.post('/api/forgot_password', authController.forgot)
 router.post('/api/reset_password', authController.reset)
 

@@ -69,3 +69,22 @@ ion-badge {
     font-size: 12px !important;
     font-weight: bold;
 }
+
+.ion-button {
+    --background: rgb(108, 169, 101);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.label {
+    margin-left: 1rem;
+}
+
+.cadastro {
+    margin-top: -1rem;
+}
+
+.logout {
+    float: right;
+    align-items: center;
+}
